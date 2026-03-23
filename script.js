@@ -283,10 +283,24 @@ function renderSessions() {
     });
 }
 
+// Global Chart Instances
+let lChart, pChart;
+
 // Interactive Diagnostic Tool Logic
 function initDiagnosticoForm() {
     const form = document.getElementById('diagnostico-form');
     if (!form) return;
+    
+    // Seed dummy data if empty for demonstration purposes
+    if (!localStorage.getItem('clasesLiderazgoData')) {
+        const dummyData = [
+            {nombre: "Ana", cargo: "Ventas", vende: "Soluciones de nube seguras", liderazgo: "6"},
+            {nombre: "Carlos", cargo: "Ingeniero", vende: "Software rápido y licencias", liderazgo: "4"},
+            {nombre: "María", cargo: "Consultor", vende: "Tranquilidad y soluciones a medida", liderazgo: "8"},
+            {nombre: "Juan", cargo: "Gerente", vende: "Proyectos en tiempo y forma", liderazgo: "7"}
+        ];
+        localStorage.setItem('clasesLiderazgoData', JSON.stringify(dummyData));
+    }
     
     form.addEventListener('submit', function(e) {
         e.preventDefault();
@@ -296,6 +310,12 @@ function initDiagnosticoForm() {
         const vende = document.getElementById('que-vendes').value;
         const liderazgo = document.getElementById('liderazgo').value;
         
+        // Save to localStorage
+        let data = JSON.parse(localStorage.getItem('clasesLiderazgoData')) || [];
+        data.push({ nombre, cargo, vende, liderazgo });
+        localStorage.setItem('clasesLiderazgoData', JSON.stringify(data));
+        
+        // Display result
         document.getElementById('res-nombre').innerText = nombre;
         document.getElementById('res-cargo').innerText = cargo;
         document.getElementById('res-vende').innerText = '"' + vende + '"';
@@ -308,6 +328,141 @@ function initDiagnosticoForm() {
         
         form.style.display = 'none';
         document.getElementById('perfil-resultado').style.display = 'block';
+        
+        // Update charts if dashboard is open
+        if (document.getElementById('instructor-dashboard').style.display === 'block') {
+            renderDashboard();
+        }
+    });
+}
+
+function toggleDashboard() {
+    const dash = document.getElementById('instructor-dashboard');
+    if (dash.style.display === 'none') {
+        dash.style.display = 'block';
+        renderDashboard();
+        setTimeout(() => dash.scrollIntoView({ behavior: 'smooth' }), 100);
+    } else {
+        dash.style.display = 'none';
+    }
+}
+
+function clearData() {
+    if(confirm('¿Estás seguro de borrar todos los datos del equipo?')) {
+        localStorage.removeItem('clasesLiderazgoData');
+        renderDashboard();
+        alert('Datos borrados.');
+    }
+}
+
+function renderDashboard() {
+    const data = JSON.parse(localStorage.getItem('clasesLiderazgoData')) || [];
+    const listContainer = document.getElementById('lista-vendedores');
+    
+    // Render List
+    if (data.length === 0) {
+        listContainer.innerHTML = '<p style="color: var(--text-muted); font-style: italic;">No hay datos aún.</p>';
+        updateCharts([], []);
+        return;
+    }
+    
+    listContainer.innerHTML = data.map(d => `
+        <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass); padding: 1rem; border-radius: 8px;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <strong style="color: #fff;">${d.nombre}</strong>
+                <span class="badge" style="margin: 0; padding: 0.2rem 0.8rem; font-size: 0.7rem;">Liderazgo: ${d.liderazgo}/10</span>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--accent-secondary); margin-bottom: 0.3rem;">${d.cargo}</p>
+            <p style="font-size: 0.95rem; color: #cbd5e1; font-style: italic;">"${d.vende}"</p>
+        </div>
+    `).reverse().join('');
+    
+    // Calculate Liderazgo Distribution
+    let scores = [0,0,0,0,0,0,0,0,0,0];
+    data.forEach(d => {
+        let val = parseInt(d.liderazgo);
+        if(!isNaN(val) && val >=1 && val <=10) {
+            scores[val-1]++;
+        }
+    });
+    
+    // Calculate Word Frequencies
+    const stopWords = new Set(['el','la','lo','los','las','un','una','unos','unas','de','del','a','al','en','para','por','con','sin','y','o','que','qué','es','no','si','se','su','mis','tu','te','me','como','más','muy','este','esta','esto','las', 'los']);
+    let wordsCount = {};
+    data.forEach(item => {
+        let text = item.vende.toLowerCase().replace(/[.,!?;:()]/g, '');
+        let tokens = text.split(/\s+/);
+        tokens.forEach(w => {
+            if (w.length > 3 && !stopWords.has(w)) {
+                wordsCount[w] = (wordsCount[w] || 0) + 1;
+            }
+        });
+    });
+    
+    let sortedWords = Object.entries(wordsCount).sort((a,b) => b[1] - a[1]).slice(0, 5);
+    
+    updateCharts(scores, sortedWords);
+}
+
+function updateCharts(scores, topWords) {
+    Chart.defaults.color = '#9ca3af';
+    Chart.defaults.font.family = "'Inter', sans-serif";
+    
+    // Liderazgo Chart
+    if (lChart) lChart.destroy();
+    const ctxL = document.getElementById('liderazgoChart').getContext('2d');
+    lChart = new Chart(ctxL, {
+        type: 'bar',
+        data: {
+            labels: ['1','2','3','4','5','6','7','8','9','10'],
+            datasets: [{
+                label: 'Cantidad de Personas',
+                data: scores,
+                backgroundColor: 'rgba(0, 240, 255, 0.7)',
+                borderColor: '#00f0ff',
+                borderWidth: 1,
+                borderRadius: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } },
+            plugins: { legend: { display: false } }
+        }
+    });
+    
+    // Words Chart
+    if (pChart) pChart.destroy();
+    const ctxP = document.getElementById('palabrasChart').getContext('2d');
+    
+    let wLabels = topWords.map(tw => tw[0]);
+    let wData = topWords.map(tw => tw[1]);
+    
+    pChart = new Chart(ctxP, {
+        type: 'doughnut',
+        data: {
+            labels: wLabels,
+            datasets: [{
+                data: wData,
+                backgroundColor: [
+                    '#7000ff',
+                    '#00f0ff',
+                    '#ff0055',
+                    '#4ade80',
+                    '#facc15'
+                ],
+                borderWidth: 0,
+                hoverOffset: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { 
+                legend: { position: 'right', labels: { color: '#fff', font: {size: 10} } } 
+            }
+        }
     });
 }
 
