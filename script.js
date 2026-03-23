@@ -21,8 +21,8 @@ const sessions = [
             placeholder: "Ej: Mi cliente perdía visibilidad global. Instalamos el dashboard y en 2 semanas ahorraron 40 horas operativas."
         },
         resources: [
-            { type: "video", text: "Start with Why - Simon Sinek", url: "https://www.youtube.com/watch?v=u4ZoJKF_VuA" },
-            { type: "video", text: "How to Sound Smart - Will Stephen", url: "https://www.youtube.com/watch?v=8S0FDjFBj8o" }
+            { type: "video", text: "Start with Why - Simon Sinek", url: "https://www.youtube.com/watch?v=u4ZoJKF_VuA", question: "¿Cómo puedes empezar tu próxima reunión de ventas explicando el 'Por Qué' (tu impacto) antes de hablar de tu software (el 'Qué')?" },
+            { type: "video", text: "How to Sound Smart - Will Stephen", url: "https://www.youtube.com/watch?v=8S0FDjFBj8o", question: "¿Qué gesto o muletilla (verbal o corporal) viste en el video que sueles hacer tú por nerviosismo y cómo lo evitarás?" }
         ]
     },
     {
@@ -46,8 +46,8 @@ const sessions = [
             placeholder: "Ej: Cuando me preguntan por el precio suelo hablar rápido y mirar abajo. Desde hoy haré silencio de 2 segundos."
         },
         resources: [
-            { type: "video", text: "Your body language may shape who you are - Amy Cuddy", url: "https://www.youtube.com/watch?v=Ks-_Mh1QhMc" },
-            { type: "video", text: "Body Language for Video Calls", url: "https://www.youtube.com/watch?v=cFTiGecOoqM" }
+            { type: "video", text: "Your body language may shape who you are - Amy Cuddy", url: "https://www.youtube.com/watch?v=Ks-_Mh1QhMc", question: "¿En qué momento de alto estrés presencial podrías aplicar una 'Power Pose' de 2 minutos antes de la reunión comercial?" },
+            { type: "video", text: "Body Language for Video Calls", url: "https://www.youtube.com/watch?v=cFTiGecOoqM", question: "En tu próxima llamada por Teams, ¿qué ajuste harás en la cámara o postura para proyectar 100% de atención?" }
         ]
     },
     {
@@ -71,8 +71,8 @@ const sessions = [
             placeholder: "Ej: Contexto: Empresa ABC. Problema: Migración de datos lenta. Resultado: Proyecto entregado 1 mes antes sin downtime."
         },
         resources: [
-            { type: "video", text: "The magical science of storytelling - David JP Phillips", url: "https://www.youtube.com/watch?v=Nj-hdQMa3uA" },
-            { type: "video", text: "How to speak so that people want to listen - Julian Treasure", url: "https://www.youtube.com/watch?v=eIho2S0ZahI" }
+            { type: "video", text: "The magical science of storytelling - David JP Phillips", url: "https://www.youtube.com/watch?v=Nj-hdQMa3uA", question: "¿Qué historia técnica usarías para inyectar un 'pico de Dopamina' (atención) en tu audiencia directiva?" },
+            { type: "video", text: "How to speak so that people want to listen - Julian Treasure", url: "https://www.youtube.com/watch?v=eIho2S0ZahI", question: "De los pecados al hablar, ¿crees que tú o tu equipo tienden a 'pontificar' sobre tecnología? ¿Cómo serás más breve?" }
         ]
     },
     {
@@ -96,8 +96,8 @@ const sessions = [
             placeholder: "Ej: En vez de vender 'VPN cifrada 256-bit', vendo 'Tus vendedores trabajarán desde casa sin riesgo a fugas de datos'."
         },
         resources: [
-            { type: "video", text: "Talk nerdy to me - Melissa Marshall", url: "https://www.youtube.com/watch?v=yIEQAoXFAUQ" },
-            { type: "video", text: "The Feynman Technique 2.0", url: "https://www.youtube.com/watch?v=tkm0JZcj0kM" }
+            { type: "video", text: "Talk nerdy to me - Melissa Marshall", url: "https://www.youtube.com/watch?v=yIEQAoXFAUQ", question: "¿Qué característica ultra-técnica de tu producto puedes traducir a una analogía simple y cotidiana como sugiere Melissa?" },
+            { type: "video", text: "The Feynman Technique 2.0", url: "https://www.youtube.com/watch?v=tkm0JZcj0kM", question: "Si un cliente con 0% de base en tecnología te preguntara qué vendes, ¿cómo se lo explicarías usando esta técnica?" }
         ]
     },
     {
@@ -121,8 +121,8 @@ const sessions = [
             placeholder: "Ej: 1. ¿Qué es lo que más te frustra de tu infraestructura actual? 2. ¿Qué pasará si no resuelves este desafío?"
         },
         resources: [
-             { type: "video", text: "The power of listening - William Ury", url: "https://www.youtube.com/watch?v=saXfavo1OQo" },
-            { type: "video", text: "10 ways to have a better conversation - Celeste Headlee", url: "https://www.youtube.com/watch?v=R1vskiVDwl4" }
+             { type: "video", text: "The power of listening - William Ury", url: "https://www.youtube.com/watch?v=saXfavo1OQo", question: "¿En tu próxima negociación, en qué punto exacto podrías usar la técnica de 'ir al balcón' para no reaccionar impulsivamente?" },
+            { type: "video", text: "10 ways to have a better conversation - Celeste Headlee", url: "https://www.youtube.com/watch?v=R1vskiVDwl4", question: "De las 10 reglas, ¿qué comportamiento de mala escucha te comprometes a suprimir con tu próximo prospecto VIP?" }
         ]
     },
     {
@@ -146,8 +146,8 @@ const sessions = [
             placeholder: "Ej: Principalmente enfrento al CTO y al CFO. Al CTO enfatizo SLA; al CFO hablo de ROI a 12 meses."
         },
         resources: [
-            { type: "video", text: "Presenting in a Hybrid World (HBR Channel)", url: "https://www.youtube.com/watch?v=1XkG7LqXyCQ" },
-            { type: "video", text: "How to know your audience - Communication Skills", url: "https://www.youtube.com/watch?v=ZJcqoA_sZFA" }
+            { type: "video", text: "Presenting in a Hybrid World (HBR)", url: "https://www.youtube.com/watch?v=1XkG7LqXyCQ", question: "Al presentar a un comité híbrido, ¿cómo asegurarás que los CFOs conectados remotamente no pierdan el hilo financiero?" },
+            { type: "video", text: "How to know your audience - Communication Skills", url: "https://www.youtube.com/watch?v=ZJcqoA_sZFA", question: "¿Qué micro-preguntas harás en los primeros 3 minutos para perfilar si tu prospecto es Político, Técnico o Numérico?" }
         ]
     },
     {
@@ -171,8 +171,8 @@ const sessions = [
             placeholder: "Ej: Objeción: 'No tenemos presupuesto este año'. Validación: 'Te entiendo perfectamente, cuidar el flujo de caja es vital...' "
         },
         resources: [
-            { type: "video", text: "Think Fast, Talk Smart - Matt Abrahams", url: "https://www.youtube.com/watch?v=HAnw168huqA" },
-            { type: "video", text: "Handling Objections in Sales - Brian Tracy", url: "https://www.youtube.com/watch?v=N4T14I8B_4k" }
+            { type: "video", text: "Think Fast, Talk Smart - Matt Abrahams", url: "https://www.youtube.com/watch?v=HAnw168huqA", question: "¿Qué técnica de manejo de nerviosismo usarás cuando el cliente ataque tu solución integral y sientas presión extrema?" },
+            { type: "video", text: "Handling Objections in Sales - Brian Tracy", url: "https://www.youtube.com/watch?v=N4T14I8B_4k", question: "Según Brian, el precio rara vez es la objeción real. ¿Cómo indagarás qué miedo profundo se esconde detrás del 'está muy caro'?" }
         ]
     },
     {
@@ -196,8 +196,8 @@ const sessions = [
             placeholder: "Ej: ¿Qué tendría que suceder internamente para que la automatización de este proceso suba a prioridad 1?"
         },
         resources: [
-            { type: "video", text: "The power of vulnerability - Brené Brown", url: "https://www.youtube.com/watch?v=iCvmsMzlF7o" },
-            { type: "video", text: "Imposter Syndrome in IT & Tech", url: "https://www.youtube.com/watch?v=ZkwqZfvbdFw" }
+            { type: "video", text: "The power of vulnerability - Brené Brown", url: "https://www.youtube.com/watch?v=iCvmsMzlF7o", question: "¿Cómo puedes admitir estratégicamente una limitación/debilidad de tu servicio para ganar credibilidad absoluta?" },
+            { type: "video", text: "Imposter Syndrome in IT & Tech", url: "https://www.youtube.com/watch?v=ZkwqZfvbdFw", question: "¿Qué creencia limitante sueles sentir al venderle a un Director de multinacional, y cómo separarás esa ansiedad de tu valor real?" }
         ]
     },
     {
@@ -220,8 +220,8 @@ const sessions = [
             placeholder: "Ej: 'Sé que su tiempo es muy limitado y hay resistencia a la nube pública. Permítame mostrarle en 3 minutos cómo lo mitigamos.'"
         },
         resources: [
-            { type: "video", text: "Best tech presentation patterns", url: "https://www.youtube.com/watch?v=Unzc731iCUY" },
-            { type: "video", text: "How to Pitch - Real World Examples", url: "https://www.youtube.com/watch?v=i6O98IG2anQ" }
+            { type: "video", text: "Best tech presentation patterns", url: "https://www.youtube.com/watch?v=Unzc731iCUY", question: "Identifica 1 patrón visual de esta charla que puedas incorporar para limpiar drásticamente tu propio PowerPoint." },
+            { type: "video", text: "How to Pitch - Real World Examples", url: "https://www.youtube.com/watch?v=i6O98IG2anQ", question: "Analizando este pitch ganador, ¿qué elemento de 'tensión dramática' usarás para abrir o rematar tu próxima defensa técnica?" }
         ]
     },
     {
@@ -245,8 +245,8 @@ const sessions = [
             placeholder: "Ej: 1. Hacer silencios de 3 seg tras el precio. 2. Responder con Empatía primero. 3. Transformar mis features en dolores."
         },
         resources: [
-            { type: "video", text: "Habits of successful teams - Tedx", url: "https://www.youtube.com/watch?v=vVjE_K8xY0c" },
-            { type: "video", text: "Discipline Equals Freedom - Jocko Willink", url: "https://www.youtube.com/watch?v=_tEawEGqP40" }
+            { type: "video", text: "Habits of successful teams - Tedx", url: "https://www.youtube.com/watch?v=vVjE_K8xY0c", question: "¿Cuál de estos hábitos de equipo de alto rendimiento empezarás a liderar tú mismo en tu reunión de Pipeline semanal?" },
+            { type: "video", text: "Discipline Equals Freedom - Jocko Willink", url: "https://www.youtube.com/watch?v=_tEawEGqP40", question: "Si la rutina da enfoque comercial: ¿Qué comportamiento estricto de agenda adoptarás al prospectar para evitar la procrastinación?" }
         ]
     }
 ];
@@ -255,11 +255,22 @@ function renderSessions() {
     const timeline = document.querySelector('.timeline');
     
     sessions.forEach((session, index) => {
-        let resourcesHTML = session.resources.map(res => `
-            <a href="${res.url}" class="resource-link" target="_blank" rel="noopener noreferrer">
-                <i data-lucide="${res.type}"></i>
-                <span>${res.text}</span>
-            </a>
+        let resourcesHTML = session.resources.map((res, resIndex) => `
+            <div class="resource-interactive-card" style="margin-bottom: 1.5rem; background: var(--bg-glass); border: 1px solid var(--border-glass); border-radius: 8px; overflow: hidden;">
+                <a href="${res.url}" class="resource-link" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; padding: 1rem; border-bottom: 1px solid var(--border-glass); background: rgba(255,255,255,0.02); text-decoration: none;">
+                    <i data-lucide="${res.type}" style="margin-right: 10px; color: var(--accent-primary);"></i>
+                    <span style="color: var(--text-light); font-weight: 500;">${res.text}</span>
+                    <i data-lucide="external-link" style="margin-left: auto; width: 14px; height: 14px; color: var(--text-muted);"></i>
+                </a>
+                <div class="resource-reflection" style="padding: 1rem;">
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.8rem;"><i data-lucide="edit-3" style="width: 14px; height: 14px; display: inline-block; vertical-align: middle; margin-right: 4px; color: var(--accent-secondary);"></i> <strong>Reflexión:</strong> ${res.question}</p>
+                    <textarea id="ref-${session.num}-${resIndex}" placeholder="Escribe tu reflexión sobre este contenido..." rows="2" style="width: 100%; height: 60px; background: rgba(0,0,0,0.2); color: var(--text-light); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 0.8rem; font-family: inherit; font-size: 0.85rem; resize: vertical; margin-bottom: 0.8rem; outline: none; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='var(--accent-primary)'" onblur="this.style.borderColor='rgba(255,255,255,0.1)'"></textarea>
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <span class="save-status" id="status-ref-${session.num}-${resIndex}" style="font-size: 0.8rem; font-weight: 500;"></span>
+                        <button onclick="saveResourceReflection(${session.num}, ${resIndex}, this)" style="background: transparent; border: 1px solid var(--accent-primary); color: var(--accent-primary); padding: 0.4rem 0.8rem; border-radius: 4px; font-size: 0.8rem; cursor: pointer; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 4px;" onmouseover="this.style.background='rgba(0, 240, 255, 0.1)'" onmouseout="this.style.background='transparent'">Guardar Apunte</button>
+                    </div>
+                </div>
+            </div>
         `).join('');
 
         let slidesHTML = session.pptOutline.map(slide => `
@@ -313,21 +324,8 @@ function renderSessions() {
                 </div>
 
                 <div class="resources-box">
-                    <h4><i data-lucide="folder-open" class="icon-lucide"></i> Documentos y Material Verificado</h4>
+                    <h4><i data-lucide="folder-open" class="icon-lucide"></i> Herramientas de Reflexión y Material</h4>
                     ${resourcesHTML}
-                </div>
-
-                <div class="session-interactive-zone" style="margin-top: 2rem; background: rgba(0,255,163,0.03); border: 1px solid rgba(0,255,163,0.15); border-radius: 8px; padding: 1.5rem;">
-                    <div class="interactive-header" style="display: flex; align-items: center; gap: 10px; margin-bottom: 1rem;">
-                        <i data-lucide="edit-3" class="icon-lucide text-neon"></i>
-                        <h4 style="margin: 0; color: var(--text-light);">Vínculo con tu Realidad Comercial</h4>
-                    </div>
-                    <p class="question-label" style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 0.8rem;">${session.interactiveQuestion.question}</p>
-                    <textarea class="reflection-input" id="reflection-${session.num}" placeholder="${session.interactiveQuestion.placeholder}" rows="3" style="width: 100%; background: var(--bg-dark); color: var(--text-light); border: 1px solid var(--border-glass); border-radius: 6px; padding: 1rem; font-family: 'Inter', sans-serif; resize: vertical; margin-bottom: 1rem;"></textarea>
-                    <div style="display: flex; align-items: center; gap: 1rem;">
-                        <button class="btn-outline btn-save-reflection" onclick="saveReflection(${session.num}, this)" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">Guardar Reflexión</button>
-                        <span class="save-status" id="save-status-${session.num}" style="font-size: 0.85rem; font-weight: 500;"></span>
-                    </div>
                 </div>
             </div>
         `;
@@ -392,36 +390,41 @@ function toggleDashboard() {
 // Funciones para Reflexiones Interactivas de Sesión
 function loadReflections() {
     sessions.forEach(session => {
-        let savedText = localStorage.getItem(`reflection_${session.num}`);
-        if(savedText) {
-            let textarea = document.getElementById(`reflection-${session.num}`);
-            if(textarea) {
-                textarea.value = savedText;
+        session.resources.forEach((res, resIndex) => {
+            let savedText = localStorage.getItem(`ref_${session.num}_${resIndex}`);
+            if(savedText) {
+                let textarea = document.getElementById(`ref-${session.num}-${resIndex}`);
+                if(textarea) {
+                    textarea.value = savedText;
+                }
             }
-        }
+        });
     });
 }
 
-window.saveReflection = function(sessionNum, btnElement) {
-    const textarea = document.getElementById(`reflection-${sessionNum}`);
-    const statusSpan = document.getElementById(`save-status-${sessionNum}`);
+window.saveResourceReflection = function(sessionNum, resIndex, btnElement) {
+    const textarea = document.getElementById(`ref-${sessionNum}-${resIndex}`);
+    const statusSpan = document.getElementById(`status-ref-${sessionNum}-${resIndex}`);
     
     if(textarea && textarea.value.trim() !== "") {
-        localStorage.setItem(`reflection_${sessionNum}`, textarea.value);
-        statusSpan.innerText = "¡Reflexión Guardada!";
+        localStorage.setItem(`ref_${sessionNum}_${resIndex}`, textarea.value);
+        statusSpan.innerText = "¡Apunte Guardado!";
         statusSpan.style.color = "var(--success-color, #4ade80)";
         
-        // Efecto visual en el botón
         let originalText = btnElement.innerText;
-        btnElement.innerText = "Actualizado";
+        btnElement.innerHTML = `<i data-lucide="check" style="width: 12px; height: 12px;"></i> Listo`;
         btnElement.style.borderColor = "var(--success-color, #4ade80)";
+        btnElement.style.color = "var(--success-color, #4ade80)";
+        lucide.createIcons(); // render the check icon
+        
         setTimeout(() => {
             statusSpan.innerText = "";
             btnElement.innerText = originalText;
             btnElement.style.borderColor = "var(--accent-primary)";
+            btnElement.style.color = "var(--accent-primary)";
         }, 3000);
     } else {
-        alert("Escribe una reflexión antes de guardar.");
+        alert("¡No puedes guardar un apunte vacío!");
     }
 };
 
