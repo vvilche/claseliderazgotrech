@@ -646,6 +646,10 @@ function renderSessions() {
     const timeline = document.querySelector('.timeline');
     
     sessions.forEach((session, index) => {
+        let modalityClass = session.modality.toLowerCase() === 'presencial' ? 'presencial' : 'teams';
+        let modalityIcon = modalityClass === 'presencial' ? 'users' : 'monitor';
+        const cardClass = session.modality === 'Presencial' ? 'session-item presencial' : 'session-item';
+
         let resourcesHTML = session.resources.map((res, resIndex) => `
             <div class="resource-interactive-card" style="margin-bottom: 1.5rem; background: var(--bg-glass); border: 1px solid var(--border-glass); border-radius: 8px; overflow: hidden;">
                 <a href="${res.url}" class="resource-link" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; padding: 1rem; border-bottom: 1px solid var(--border-glass); background: rgba(255,255,255,0.02); text-decoration: none;">
@@ -699,9 +703,6 @@ function renderSessions() {
         const element = document.createElement('div');
         element.className = `${cardClass} reveal`;
         element.style.transitionDelay = `${(index % 5) * 0.1}s`;
-        
-        let modalityClass = session.modality.toLowerCase() === 'presencial' ? 'presencial' : 'teams';
-        let modalityIcon = modalityClass === 'presencial' ? 'users' : 'monitor';
 
         element.innerHTML = `
             <div class="session-number">${session.num}</div>
