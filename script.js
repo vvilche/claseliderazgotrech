@@ -2,7 +2,8 @@
 const sessions = [
     {
         num: 1,
-        modality: "Presencial",
+        date: "Lunes 23 de Marzo",
+        modality: "Teams",
         title: "Claridad del Mensaje Comercial",
         desc: "Estructurar un mensaje de ventas corto, claro y centrado en el cliente. Pasar de la información a la dirección.",
         objective: "Lograr estructurar un mensaje de ventas corto, claro y contundente sobre lo que cada uno vende.",
@@ -27,7 +28,8 @@ const sessions = [
     },
     {
         num: 2,
-        modality: "Teams",
+        date: "Miércoles 25 de Marzo",
+        modality: "Presencial",
         title: "Presencia y Lenguaje Ejecutivo",
         desc: "Dominio de la postura (espalda recta), voz (ritmo medio) y el silencio estratégico para proyectar seguridad.",
         objective: "Aprender a utilizar la postura, la voz y el silencio para proyectar autoridad y seguridad frente al cliente.",
@@ -52,6 +54,7 @@ const sessions = [
     },
     {
         num: 3,
+        date: "Viernes 27 de Marzo",
         modality: "Teams",
         title: "Storytelling Comercial",
         desc: "Estructurar casos de éxito comerciales utilizando la narrativa: Contexto -> Problema -> Intervención -> Resultado.",
@@ -77,6 +80,7 @@ const sessions = [
     },
     {
         num: 4,
+        date: "Lunes 30 de Marzo",
         modality: "Teams",
         title: "Simplificación Técnica",
         desc: "Técnicas para traducir el lenguaje técnico a variables de negocio directo (dinero, tiempo, riesgo, imagen).",
@@ -102,6 +106,7 @@ const sessions = [
     },
     {
         num: 5,
+        date: "Miércoles 1 de Abril",
         modality: "Presencial",
         title: "Escucha Activa",
         desc: "Los tres niveles de escucha (Superficial, Interpretativa, Estratégica) y el arte de formular preguntas de alto impacto.",
@@ -127,6 +132,7 @@ const sessions = [
     },
     {
         num: 6,
+        date: "Viernes 3 de Abril",
         modality: "Teams",
         title: "Lectura del Cliente",
         desc: "Identificación de perfiles de clientes (Técnico, Financiero, Político) y adaptación dinámica del mensaje comercial.",
@@ -152,6 +158,7 @@ const sessions = [
     },
     {
         num: 7,
+        date: "Lunes 6 de Abril",
         modality: "Teams",
         title: "Manejo de Objeciones",
         desc: "Entender que una objeción es interés con dudas. Aplicación estricta del método: Validar -> Explorar -> Responder.",
@@ -177,7 +184,8 @@ const sessions = [
     },
     {
         num: 8,
-        modality: "Teams",
+        date: "Miércoles 8 de Abril",
+        modality: "Presencial",
         title: "Objeciones Complejas",
         desc: "Sorteando bloqueadores estratégicos invisibles: Riesgo percibido, Política interna y Prioridad de la solución.",
         objective: "Desarrollar herramientas para manejar evasivas corporativas complejas donde el precio no es el verdadero freno.",
@@ -202,7 +210,8 @@ const sessions = [
     },
     {
         num: 9,
-        modality: "Presencial",
+        date: "Viernes 10 de Abril",
+        modality: "Teams",
         title: "Simulación Integral",
         desc: "Práctica del ciclo comercial completo: Apertura, Diagnóstico, Presentación, Manejo de Objeciones y Cierre.",
         objective: "Demostrar fluidez, estructura y seguridad integrando todas las habilidades desarrolladas en un entorno de alta presión.",
@@ -226,7 +235,8 @@ const sessions = [
     },
     {
         num: 10,
-        modality: "Presencial",
+        date: "Lunes 13 de Abril",
+        modality: "Teams",
         title: "Transferencia al Terreno",
         desc: "Construcción de compromisos tangibles para el equipo y el día a día. ¿Qué cambiar? ¿Cómo medir? ¿Cuándo aplicar?",
         objective: "Asegurar que el nuevo lenguaje unificado y la oratoria comercial se consoliden como disciplina de equipo inquebrantable.",
@@ -287,11 +297,18 @@ function renderSessions() {
         element.innerHTML = `
             <div class="session-number">${session.num}</div>
             <div class="session-content">
-                <div class="modality-badge ${modalityClass}">
-                    <i data-lucide="${modalityIcon}" style="width: 14px; height: 14px;"></i>
-                    ${session.modality}
+                <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 1rem;">
+                    <div class="modality-badge ${modalityClass}">
+                        <i data-lucide="${modalityIcon}" style="width: 14px; height: 14px;"></i>
+                        ${session.modality}
+                    </div>
+                    ${session.date ? `
+                    <div class="modality-badge" style="background: rgba(255, 255, 255, 0.05); color: var(--text-light); border: 1px solid rgba(255,255,255,0.1);">
+                        <i data-lucide="calendar" style="width: 14px; height: 14px;"></i>
+                        ${session.date}
+                    </div>` : ''}
                 </div>
-                <h3>${session.title}</h3>
+                <h3 style="margin-top: 0;">${session.title}</h3>
                 <p>${session.desc}</p>
                 
                 <div class="leadership-capsule">
