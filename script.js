@@ -283,9 +283,32 @@ function renderSessions() {
             </div>
         `).join('');
 
-        let slidesHTML = session.pptOutline.map(slide => `
-            <li>${slide}</li>
-        `).join('');
+        let slidesHTML = session.pptOutline.map(slide => {
+            let firstColon = slide.indexOf(':');
+            let headerPart = firstColon > -1 ? slide.substring(0, firstColon) : slide;
+            let descPart = firstColon > -1 ? slide.substring(firstColon + 1).trim() : '';
+            
+            let timeMatch = headerPart.match(/\(([^)]+)\)/);
+            let timeTxt = timeMatch ? timeMatch[1] : '';
+            let rawTitle = headerPart.replace(/\([^)]+\)/, '').trim();
+            
+            let numMatch = rawTitle.match(/^(\d+)\./);
+            let numValue = numMatch ? numMatch[1] : '';
+            let titleText = rawTitle.replace(/^(\d+)\.\s*/, '');
+            
+            return `
+            <div class="ppt-step-card">
+                <div class="step-badge">${numValue}</div>
+                <div class="step-content">
+                    <div class="step-header">
+                        <span class="step-title">${titleText}</span>
+                        ${timeTxt ? `<span class="step-time"><i data-lucide="clock" style="width: 12px; height: 12px;"></i> ${timeTxt}</span>` : ''}
+                    </div>
+                    ${descPart ? `<p class="step-desc">${descPart}</p>` : ''}
+                </div>
+            </div>
+            `;
+        }).join('');
 
         const element = document.createElement('div');
         element.className = 'session-item reveal';
@@ -335,9 +358,9 @@ function renderSessions() {
                 
                 <div class="ppt-list">
                     <h4><i data-lucide="presentation" class="icon-lucide"></i> Contenido Presentación (PPT Expandida)</h4>
-                    <ul>
+                    <div class="ppt-flow-container">
                         ${slidesHTML}
-                    </ul>
+                    </div>
                 </div>
 
                 <div class="resources-box">
