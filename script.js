@@ -24,6 +24,78 @@ const sessions = [
         resources: [
             { type: "video", text: "Start with Why - Simon Sinek", url: "https://www.youtube.com/watch?v=u4ZoJKF_VuA", question: "¿Cómo puedes empezar tu próxima reunión de ventas explicando el 'Por Qué' (tu impacto) antes de hablar de tu software (el 'Qué')?" },
             { type: "video", text: "How to Sound Smart - Will Stephen", url: "https://www.youtube.com/watch?v=8S0FDjFBj8o", question: "¿Qué gesto o muletilla (verbal o corporal) viste en el video que sueles hacer tú por nerviosismo y cómo lo evitarás?" }
+        ],
+        slides: [
+            {
+                title: "Claridad del Mensaje Comercial",
+                content: `<p style="color: var(--text-muted); font-size: 1.5rem; text-align: center; margin-bottom: 2rem;">De la Información a la Dirección</p>
+                          <div style="text-align: center;">
+                              <i data-lucide="target" style="width: 120px; height: 120px; color: var(--accent-primary); margin-bottom: 2rem;"></i>
+                          </div>`,
+                notes: "Dar la bienvenida con energía. Mencionar el formato: 'Será 100% interactivo. Hoy no venimos a escuchar teoría, venimos a reestructurar cómo vendemos'."
+            },
+            {
+                title: "¿Qué vendemos realmente?",
+                content: `<p style="font-size: 1.4rem; color: var(--accent-secondary); margin-bottom: 1.5rem; text-align: center;">Si a 10 vendedores de la misma empresa les preguntamos qué venden, obtenemos 10 respuestas distintas.</p>
+                          <div style="background: rgba(0,0,0,0.3); padding: 2rem; border-radius: 12px; text-align: center; border: 1px dashed var(--border-glass);">
+                              <i data-lucide="users" style="width: 64px; height: 64px; color: var(--text-muted); margin-bottom: 1rem;"></i>
+                              <p>Actividad: Pedir a 3 personas al azar que digan en <strong>una frase</strong> qué vende la empresa.</p>
+                          </div>`,
+                notes: "Acá es crítico no juzgar si alguien lo dice 'mal'. El objetivo es demostrar la falta de ALINEACIÓN."
+            },
+            {
+                title: "El Mito vs. La Realidad",
+                content: `<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                            <div style="background: rgba(239, 68, 68, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.3);">
+                                <h3 style="color: #ef4444; margin-bottom: 1rem;"><i data-lucide="x-circle"></i> Mito: "Hablar Bonito"</h3>
+                                <ul style="list-style-type: none; padding: 0;">
+                                    <li style="margin-bottom: 0.8rem;"><i data-lucide="minus" style="width:16px; color:#ef4444;"></i> Entretener y caer bien</li>
+                                    <li style="margin-bottom: 0.8rem;"><i data-lucide="minus" style="width:16px; color:#ef4444;"></i> Hablar sin pausas</li>
+                                    <li style="margin-bottom: 0.8rem;"><i data-lucide="minus" style="width:16px; color:#ef4444;"></i> Recitar características técnicas</li>
+                                </ul>
+                            </div>
+                            <div style="background: rgba(16, 185, 129, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.3);">
+                                <h3 style="color: #10b981; margin-bottom: 1rem;"><i data-lucide="check-circle"></i> Realidad: Dirección Comercial</h3>
+                                <ul style="list-style-type: none; padding: 0;">
+                                    <li style="margin-bottom: 0.8rem;"><i data-lucide="check" style="width:16px; color:#10b981;"></i> Diagnosticar el dolor real</li>
+                                    <li style="margin-bottom: 0.8rem;"><i data-lucide="check" style="width:16px; color:#10b981;"></i> Liderar la estructura de la conversación</li>
+                                    <li style="margin-bottom: 0.8rem;"><i data-lucide="check" style="width:16px; color:#10b981;"></i> Simplificar lo complejo para negocio</li>
+                                </ul>
+                            </div>
+                          </div>`,
+                notes: "El liderazgo comercial comienza con la claridad. Un líder confuso genera equipos inseguros. Tu lenguaje define la propuesta de valor del equipo."
+            },
+            {
+                title: "La Secuencia de Impacto",
+                content: `<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 3rem;">
+                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid #ef4444; color: #ef4444; font-weight: bold; font-size: 1.5rem;">DOLOR</div></div>
+                            <i data-lucide="arrow-right" style="color: var(--text-muted); width: 32px; height: 32px;"></i>
+                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid var(--accent-secondary); color: var(--accent-secondary); font-weight: bold; font-size: 1.5rem;">SOLUCIÓN</div></div>
+                            <i data-lucide="arrow-right" style="color: var(--text-muted); width: 32px; height: 32px;"></i>
+                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid #10b981; color: #10b981; font-weight: bold; font-size: 1.5rem;">IMPACTO</div></div>
+                            <i data-lucide="arrow-right" style="color: var(--text-muted); width: 32px; height: 32px;"></i>
+                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid var(--accent-primary); color: var(--accent-primary); font-weight: bold; font-size: 1.2rem;">DIFERENCIA</div></div>
+                          </div>`,
+                notes: "El Error Tech Común: Saltar directamente a la 'Solución' y 'Diferenciación' técnica (ej: 'nuestra arquitectura es serverless') antes de justificar el Dolor e Impacto en negocio."
+            },
+            {
+                title: "El Test de los 5 Segundos",
+                content: `<div style="text-align: center; padding: 3rem;">
+                              <h2 style="font-size: 2.5rem; color: #fff; margin-bottom: 2rem;">¿Nuestros clientes entienden al instante nuestro valor?</h2>
+                              <p style="font-size: 1.5rem; color: var(--text-muted);">Escala del 1 al 10: Sinceramente, ¿Qué tan fácil es para tu prospecto entenderte en la primera reunión?</p>
+                          </div>`,
+                notes: "Dinámica en Teams: Pedir que usen el chat para responder. Leer las respuestas más bajas. Problema revelado: Usualmente es culpa de usar jerga excesivamente técnica."
+            },
+            {
+                title: "Construye tu Elevator Pitch",
+                content: `<div style="background: rgba(0, 240, 255, 0.05); padding: 3rem; border-radius: 16px; border: 1px solid var(--accent-primary); text-align: center;">
+                              <i data-lucide="pen-tool" style="width: 48px; height: 48px; color: var(--accent-primary); margin-bottom: 1rem;"></i>
+                              <h3 style="margin-bottom: 1.5rem; font-size: 2rem;">Taller Express</h3>
+                              <p style="font-size: 1.4rem; margin-bottom: 1rem;">Entra a la plataforma web > Sesión 1 > Zona de Reflexión</p>
+                              <p style="font-size: 1.4rem; color: var(--accent-secondary);">Redacta tu propio Elevator Pitch siguiendo estrictamente la Secuencia de Impacto.</p>
+                          </div>`,
+                notes: "Ejercicio Individual (5 min). Luego Hot Seat (10 min): Escoger a 2 'víctimas' que lean lo que escribieron. Feedback correctivo ultra-rápido para pulir la grasa del mensaje."
+            }
         ]
     },
     {
@@ -357,7 +429,10 @@ function renderSessions() {
                 </div>
                 
                 <div class="ppt-list">
-                    <h4><i data-lucide="presentation" class="icon-lucide"></i> Contenido Presentación (PPT Expandida)</h4>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1rem;">
+                        <h4 style="margin: 0;"><i data-lucide="presentation" class="icon-lucide"></i> Contenido Presentación (PPT Expandida)</h4>
+                        ${session.slides ? `<button onclick="openPresentation(${session.num})" class="btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i data-lucide="play" style="width: 16px; height: 16px;"></i> Iniciar Clase</button>` : ''}
+                    </div>
                     <div class="ppt-flow-container">
                         ${slidesHTML}
                     </div>
@@ -645,4 +720,94 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener("scroll", () => {
     revealOnScroll();
     handleNavbar();
+});
+
+// ==========================================
+// FULLSCREEN PRESENTATION ENGINE
+// ==========================================
+let currentPresentationSlides = [];
+let currentSlideIndex = 0;
+
+function openPresentation(sessionNum) {
+    const session = sessions.find(s => s.num === sessionNum);
+    if (!session || !session.slides || session.slides.length === 0) {
+        alert("Las diapositivas interactivas para esta sesión aún están en desarrollo.");
+        return;
+    }
+    
+    currentPresentationSlides = session.slides;
+    currentSlideIndex = 0;
+    
+    document.getElementById('presentation-modal').style.display = 'flex';
+    setTimeout(() => {
+        document.getElementById('presentation-modal').classList.add('active');
+        renderSlide();
+    }, 10);
+    
+    // Prevent background scrolling
+    document.body.style.overflow = 'hidden';
+}
+
+function closePresentation() {
+    const modal = document.getElementById('presentation-modal');
+    modal.classList.remove('active');
+    setTimeout(() => {
+        modal.style.display = 'none';
+        currentPresentationSlides = [];
+        // Restore scrolling
+        document.body.style.overflow = 'auto';
+    }, 400);
+}
+
+function renderSlide() {
+    const slide = currentPresentationSlides[currentSlideIndex];
+    if (!slide) return;
+    
+    const contentHtml = `
+        <h2 class="slide-title">${slide.title}</h2>
+        <div class="slide-body">
+            ${slide.content}
+        </div>
+        ${slide.notes ? `<div class="slide-notes">
+            <strong><i data-lucide="mic" style="width:16px; display:inline-block; margin-right:4px; vertical-align:middle;"></i> Guión de Instructor:</strong><br> ${slide.notes}
+        </div>` : ''}
+    `;
+    
+    document.getElementById('slide-content').innerHTML = contentHtml;
+    document.getElementById('slide-indicator').innerText = `${currentSlideIndex + 1} / ${currentPresentationSlides.length}`;
+    
+    // Refresh Icons inside slide
+    lucide.createIcons();
+    
+    // Update button states
+    document.getElementById('btn-prev-slide').disabled = currentSlideIndex === 0;
+    document.getElementById('btn-next-slide').disabled = currentSlideIndex === currentPresentationSlides.length - 1;
+}
+
+function nextSlide() {
+    if (currentSlideIndex < currentPresentationSlides.length - 1) {
+        currentSlideIndex++;
+        renderSlide();
+    }
+}
+
+function prevSlide() {
+    if (currentSlideIndex > 0) {
+        currentSlideIndex--;
+        renderSlide();
+    }
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+    const modal = document.getElementById('presentation-modal');
+    if (modal.style.display === 'flex' || modal.classList.contains('active')) {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+            nextSlide();
+        } else if (e.key === 'ArrowLeft') {
+            prevSlide();
+        } else if (e.key === 'Escape') {
+            closePresentation();
+        }
+    }
 });

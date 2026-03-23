@@ -211,6 +211,22 @@
         </div>
     </section>
 
+    <!-- PRESENTATION ENGINE MODAL -->
+    <div id="presentation-modal" class="presentation-modal">
+        <button class="close-presentation" onclick="closePresentation()" title="Salir de la presentación">
+            <i data-lucide="x"></i>
+        </button>
+        <div class="presentation-container">
+            <!-- Dynamic Slide Content injects here -->
+            <div id="slide-content" class="slide-content"></div>
+        </div>
+        <div class="presentation-controls">
+            <button onclick="prevSlide()" id="btn-prev-slide" class="slide-nav-btn"><i data-lucide="chevron-left"></i> Anterior</button>
+            <div class="slide-indicator" id="slide-indicator">1 / 1</div>
+            <button onclick="nextSlide()" id="btn-next-slide" class="slide-nav-btn">Siguiente <i data-lucide="chevron-right"></i></button>
+        </div>
+    </div>
+
     <footer>
         <div class="footer-content">
             <div class="logo">Liderazgo<span>Tech</span></div>
