@@ -291,17 +291,6 @@ function initDiagnosticoForm() {
     const form = document.getElementById('diagnostico-form');
     if (!form) return;
     
-    // Seed dummy data if empty for demonstration purposes
-    if (!localStorage.getItem('clasesLiderazgoData')) {
-        const dummyData = [
-            {nombre: "Ana", cargo: "Ventas", vende: "Soluciones de nube seguras", liderazgo: "6"},
-            {nombre: "Carlos", cargo: "Ingeniero", vende: "Software rápido y licencias", liderazgo: "4"},
-            {nombre: "María", cargo: "Consultor", vende: "Tranquilidad y soluciones a medida", liderazgo: "8"},
-            {nombre: "Juan", cargo: "Gerente", vende: "Proyectos en tiempo y forma", liderazgo: "7"}
-        ];
-        localStorage.setItem('clasesLiderazgoData', JSON.stringify(dummyData));
-    }
-    
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         
@@ -353,6 +342,27 @@ function clearData() {
         renderDashboard();
         alert('Datos borrados.');
     }
+}
+
+function cargarSimulacion() {
+    const simulacionB2B = [
+        {nombre: "Juan M.", cargo: "Ejecutivo Comercial", vende: "Licencias, integraciones y horas de consultoría de implantación", liderazgo: "6"},
+        {nombre: "Andrea S.", cargo: "Arquitecta de Soluciones", vende: "Arquitectura híbrida escalable, APIs seguras y reducción de latencia", liderazgo: "3"},
+        {nombre: "Felipe T.", cargo: "KAM Senior", vende: "Acompañamiento estratégico, ahorro operativo y confianza a largo plazo", liderazgo: "8"},
+        {nombre: "Camila R.", cargo: "Gerente de Proyectos", vende: "Entregas a tiempo, control de presupuesto y cero estrés operativo", liderazgo: "7"},
+        {nombre: "Roberto C.", cargo: "Soporte Técnico", vende: "Software estable, SLAs garantizados y soporte técnico 24/7", liderazgo: "4"},
+        {nombre: "Lorena P.", cargo: "Sales Manager", vende: "Tranquilidad financiera, innovación constante y retorno de inversión brutal", liderazgo: "9"},
+        {nombre: "Daniel F.", cargo: "Consultor Preventa", vende: "Migraciones seguras, ciberseguridad, integraciones y arquitectura redundante", liderazgo: "5"}
+    ];
+    localStorage.setItem('clasesLiderazgoData', JSON.stringify(simulacionB2B));
+    
+    const dash = document.getElementById('instructor-dashboard');
+    dash.style.display = 'block';
+    renderDashboard();
+    
+    setTimeout(() => {
+        dash.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
 }
 
 function renderDashboard() {
