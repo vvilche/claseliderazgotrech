@@ -599,6 +599,8 @@ h2 {
 }
 
 .modality-badge {
+    position: relative !important;
+    inset: auto !important;
     background: rgba(0, 240, 255, 0.1);
     color: var(--accent-primary);
     border: 1px solid var(--accent-primary);
@@ -608,9 +610,10 @@ h2 {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 0.4rem;
+    white-space: nowrap;
 }
 .modality-badge.presencial {
     background: rgba(255, 0, 85, 0.1);

@@ -297,7 +297,7 @@ function renderSessions() {
         element.innerHTML = `
             <div class="session-number">${session.num}</div>
             <div class="session-content">
-                <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 1rem;">
+                <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 1rem; flex-wrap: wrap;">
                     <div class="modality-badge ${modalityClass}">
                         <i data-lucide="${modalityIcon}" style="width: 14px; height: 14px;"></i>
                         ${session.modality}
