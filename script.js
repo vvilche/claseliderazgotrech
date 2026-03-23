@@ -122,6 +122,50 @@ const sessions = [
         resources: [
             { type: "video", text: "Your body language may shape who you are - Amy Cuddy", url: "https://www.youtube.com/watch?v=Ks-_Mh1QhMc", question: "¿En qué momento de alto estrés presencial podrías aplicar una 'Power Pose' de 2 minutos antes de la reunión comercial?" },
             { type: "video", text: "Body Language for Video Calls", url: "https://www.youtube.com/watch?v=cFTiGecOoqM", question: "En tu próxima llamada por Teams, ¿qué ajuste harás en la cámara o postura para proyectar 100% de atención?" }
+        ],
+        slides: [
+            {
+                title: "Presencia y Lenguaje Ejecutivo",
+                content: `<p style="color: var(--text-muted); font-size: 1.5rem; text-align: center; margin-bottom: 2rem;">El Cuerpo Comunica Antes que la Voz</p>
+                          <div style="text-align: center;">
+                              <i data-lucide="user-check" style="width: 120px; height: 120px; color: var(--accent-primary); margin-bottom: 2rem;"></i>
+                          </div>`
+            },
+            {
+                title: "¿Cómo Proyectamos Seguridad?",
+                content: `<p style="font-size: 1.4rem; color: var(--accent-secondary); margin-bottom: 1.5rem; text-align: center;">El 55% de la comunicación es lenguaje corporal.</p>
+                          <div style="background: rgba(0,0,0,0.3); padding: 2rem; border-radius: 12px; text-align: center; border: 1px dashed var(--border-glass);">
+                              <i data-lucide="video" style="width: 64px; height: 64px; color: var(--text-muted); margin-bottom: 1rem;"></i>
+                              <p style="font-size: 1.2rem;">Actividad: Evalúa tu propia postura en cámara. ¿Miras al lente o a la pantalla?</p>
+                          </div>`
+            },
+            {
+                title: "El Poder del Silencio",
+                content: `<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                            <div style="background: rgba(239, 68, 68, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.3);">
+                                <h3 style="color: #ef4444; margin-bottom: 1rem;"><i data-lucide="x-circle"></i> Error: Llenar el Vacío</h3>
+                                <ul style="list-style-type: none; padding: 0;">
+                                    <li style="margin-bottom: 0.8rem; font-size: 1.2rem;"><i data-lucide="minus" style="width:16px; color:#ef4444;"></i> Uso de muletillas ("ehhh", "mmm")</li>
+                                    <li style="margin-bottom: 0.8rem; font-size: 1.2rem;"><i data-lucide="minus" style="width:16px; color:#ef4444;"></i> Hablar rápido por nerviosismo</li>
+                                </ul>
+                            </div>
+                            <div style="background: rgba(16, 185, 129, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.3);">
+                                <h3 style="color: #10b981; margin-bottom: 1rem;"><i data-lucide="check-circle"></i> Acierto: Pausa Estratégica</h3>
+                                <ul style="list-style-type: none; padding: 0;">
+                                    <li style="margin-bottom: 0.8rem; font-size: 1.2rem;"><i data-lucide="check" style="width:16px; color:#10b981;"></i> Da peso a tu afirmación</li>
+                                    <li style="margin-bottom: 0.8rem; font-size: 1.2rem;"><i data-lucide="check" style="width:16px; color:#10b981;"></i> Proyecta control y autoridad</li>
+                                </ul>
+                            </div>
+                          </div>`
+            },
+            {
+                title: "Práctica de Oratoria",
+                content: `<div style="background: rgba(0, 240, 255, 0.05); padding: 3rem; border-radius: 16px; border: 1px solid var(--accent-primary); text-align: center;">
+                              <i data-lucide="mic" style="width: 48px; height: 48px; color: var(--accent-primary); margin-bottom: 1rem;"></i>
+                              <h3 style="margin-bottom: 1.5rem; font-size: 2rem;">Taller de Voz</h3>
+                              <p style="font-size: 1.4rem; color: var(--accent-secondary);">Lee el texto asignado aplicando pausas de 2 segundos después de cada punto.</p>
+                          </div>`
+            }
         ]
     },
     {
@@ -146,8 +190,45 @@ const sessions = [
             placeholder: "Ej: Contexto: Empresa ABC. Problema: Migración de datos lenta. Resultado: Proyecto entregado 1 mes antes sin downtime."
         },
         resources: [
-            { type: "video", text: "The magical science of storytelling - David JP Phillips", url: "https://www.youtube.com/watch?v=Nj-hdQMa3uA", question: "¿Qué historia técnica usarías para inyectar un 'pico de Dopamina' (atención) en tu audiencia directiva?" },
+            { type: "video", text: "The magical science of storytelling - David JP Phillips", url: "https://www.youtube.com/watch?v=Nj-hdQMa3uA", question: "¿Qué neurotransmisor (Dopamina, Oxitocina, Endorfina) crees que tu actual presentación evoca en los clientes?" },
             { type: "video", text: "How to speak so that people want to listen - Julian Treasure", url: "https://www.youtube.com/watch?v=eIho2S0ZahI", question: "De los pecados al hablar, ¿crees que tú o tu equipo tienden a 'pontificar' sobre tecnología? ¿Cómo serás más breve?" }
+        ],
+        slides: [
+            {
+                title: "Storytelling Comercial",
+                content: `<p style="color: var(--text-muted); font-size: 1.5rem; text-align: center; margin-bottom: 2rem;">Estructurar Casos de Éxito</p>
+                          <div style="text-align: center;">
+                              <i data-lucide="book-open" style="width: 120px; height: 120px; color: var(--accent-primary); margin-bottom: 2rem;"></i>
+                          </div>`
+            },
+            {
+                title: "¿Por qué contamos historias?",
+                content: `<p style="font-size: 1.4rem; color: var(--accent-secondary); margin-bottom: 1.5rem; text-align: center;">Los datos informan, pero las historias venden.</p>
+                          <div style="background: rgba(0,0,0,0.3); padding: 2rem; border-radius: 12px; text-align: center; border: 1px dashed var(--border-glass);">
+                              <i data-lucide="brain" style="width: 64px; height: 64px; color: var(--text-muted); margin-bottom: 1rem;"></i>
+                              <p style="font-size: 1.2rem;">El cerebro recuerda historias un 22x más que simples hechos técnicos.</p>
+                          </div>`
+            },
+            {
+                title: "Método CPIR",
+                content: `<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 3rem;">
+                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid #ef4444; color: #ef4444; font-weight: bold; font-size: 1.2rem;">CONTEXTO</div></div>
+                            <i data-lucide="arrow-right" style="color: var(--text-muted); width: 32px; height: 32px;"></i>
+                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid var(--accent-secondary); color: var(--accent-secondary); font-weight: bold; font-size: 1.2rem;">PROBLEMA</div></div>
+                            <i data-lucide="arrow-right" style="color: var(--text-muted); width: 32px; height: 32px;"></i>
+                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid #10b981; color: #10b981; font-weight: bold; font-size: 1.1rem;">INTERVENCIÓN</div></div>
+                            <i data-lucide="arrow-right" style="color: var(--text-muted); width: 32px; height: 32px;"></i>
+                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid var(--accent-primary); color: var(--accent-primary); font-weight: bold; font-size: 1.2rem;">RESULTADO</div></div>
+                          </div>`
+            },
+            {
+                title: "Taller: Tu Caso de Éxito",
+                content: `<div style="background: rgba(0, 240, 255, 0.05); padding: 3rem; border-radius: 16px; border: 1px solid var(--accent-primary); text-align: center;">
+                              <i data-lucide="award" style="width: 48px; height: 48px; color: var(--accent-primary); margin-bottom: 1rem;"></i>
+                              <h3 style="margin-bottom: 1.5rem; font-size: 2rem;">Redacción Narrativa</h3>
+                              <p style="font-size: 1.4rem; color: var(--accent-secondary);">Elige el mejor proyecto que hayas implementado y cuéntalo usando CPIR.</p>
+                          </div>`
+            }
         ]
     },
     {
@@ -174,6 +255,48 @@ const sessions = [
         resources: [
             { type: "video", text: "Talk nerdy to me - Melissa Marshall", url: "https://www.youtube.com/watch?v=yIEQAoXFAUQ", question: "¿Qué característica ultra-técnica de tu producto puedes traducir a una analogía simple y cotidiana como sugiere Melissa?" },
             { type: "video", text: "The Feynman Technique 2.0", url: "https://www.youtube.com/watch?v=tkm0JZcj0kM", question: "Si un cliente con 0% de base en tecnología te preguntara qué vendes, ¿cómo se lo explicarías usando esta técnica?" }
+        ],
+        slides: [
+            {
+                title: "Simplificación Técnica",
+                content: `<p style="color: var(--text-muted); font-size: 1.5rem; text-align: center; margin-bottom: 2rem;">Traducir Tecnología a Negocio</p>
+                          <div style="text-align: center;">
+                              <i data-lucide="layers" style="width: 120px; height: 120px; color: var(--accent-primary); margin-bottom: 2rem;"></i>
+                          </div>`
+            },
+            {
+                title: "Los 4 Pilares del Negocio",
+                content: `<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                            <div style="background: rgba(16, 185, 129, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.3); text-align: center;">
+                                <i data-lucide="dollar-sign" style="width:48px; height:48px; color:#10b981; margin-bottom:1rem;"></i>
+                                <h3 style="color: #10b981;">Dinero</h3>
+                                <p style="font-size: 1.1rem; color: var(--text-muted);">Ahorro o Nueva Ganancia</p>
+                            </div>
+                            <div style="background: rgba(59, 130, 246, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(59, 130, 246, 0.3); text-align: center;">
+                                <i data-lucide="clock" style="width:48px; height:48px; color:#3b82f6; margin-bottom:1rem;"></i>
+                                <h3 style="color: #3b82f6;">Tiempo</h3>
+                                <p style="font-size: 1.1rem; color: var(--text-muted);">Velocidad de Operación</p>
+                            </div>
+                            <div style="background: rgba(239, 68, 68, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.3); text-align: center;">
+                                <i data-lucide="shield-alert" style="width:48px; height:48px; color:#ef4444; margin-bottom:1rem;"></i>
+                                <h3 style="color: #ef4444;">Riesgo</h3>
+                                <p style="font-size: 1.1rem; color: var(--text-muted);">Mitigación de Desastres</p>
+                            </div>
+                            <div style="background: rgba(168, 85, 247, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(168, 85, 247, 0.3); text-align: center;">
+                                <i data-lucide="image" style="width:48px; height:48px; color:#a855f7; margin-bottom:1rem;"></i>
+                                <h3 style="color: #a855f7;">Imagen</h3>
+                                <p style="font-size: 1.1rem; color: var(--text-muted);">Reputación Corporativa</p>
+                            </div>
+                          </div>`
+            },
+            {
+                title: "Técnica Feynman",
+                content: `<div style="background: rgba(0, 240, 255, 0.05); padding: 3rem; border-radius: 16px; border: 1px solid var(--accent-primary); text-align: center;">
+                              <i data-lucide="message-square" style="width: 48px; height: 48px; color: var(--accent-primary); margin-bottom: 1rem;"></i>
+                              <h3 style="margin-bottom: 1.5rem; font-size: 2rem;">Taller: Analogías</h3>
+                              <p style="font-size: 1.4rem; color: var(--accent-secondary);">Toma tu feature técnico más avanzado y explícalo como si fuese a un niño de 12 años usando una analogía cotidiana.</p>
+                          </div>`
+            }
         ]
     },
     {
@@ -200,6 +323,40 @@ const sessions = [
         resources: [
              { type: "video", text: "The power of listening - William Ury", url: "https://www.youtube.com/watch?v=saXfavo1OQo", question: "¿En tu próxima negociación, en qué punto exacto podrías usar la técnica de 'ir al balcón' para no reaccionar impulsivamente?" },
             { type: "video", text: "10 ways to have a better conversation - Celeste Headlee", url: "https://www.youtube.com/watch?v=R1vskiVDwl4", question: "De las 10 reglas, ¿qué comportamiento de mala escucha te comprometes a suprimir con tu próximo prospecto VIP?" }
+        ],
+        slides: [
+            {
+                title: "Escucha Activa",
+                content: `<p style="color: var(--text-muted); font-size: 1.5rem; text-align: center; margin-bottom: 2rem;">El Silencio como Herramienta Comercial</p>
+                          <div style="text-align: center;">
+                              <i data-lucide="ear" style="width: 120px; height: 120px; color: var(--accent-primary); margin-bottom: 2rem;"></i>
+                          </div>`
+            },
+            {
+                title: "Los 3 Niveles de Escucha",
+                content: `<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                            <div style="background: rgba(239, 68, 68, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.3); text-align: center;">
+                                <h3 style="color: #ef4444;">1. Superficial</h3>
+                                <p style="font-size: 1.1rem; color: var(--text-muted);">Escucho para responder. Pienso en mi producto.</p>
+                            </div>
+                            <div style="background: rgba(59, 130, 246, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(59, 130, 246, 0.3); text-align: center;">
+                                <h3 style="color: #3b82f6;">2. Interpretativa</h3>
+                                <p style="font-size: 1.1rem; color: var(--text-muted);">Escucho los datos técnicos que avalan mi PPT.</p>
+                            </div>
+                            <div style="background: rgba(16, 185, 129, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.3); text-align: center;">
+                                <h3 style="color: #10b981;">3. Estratégica</h3>
+                                <p style="font-size: 1.1rem; color: var(--text-muted);">Leo el contexto, la frustración y la motivación subyacente.</p>
+                            </div>
+                          </div>`
+            },
+            {
+                title: "Dinámica: Role-Play a Ciegas",
+                content: `<div style="background: rgba(0, 240, 255, 0.05); padding: 3rem; border-radius: 16px; border: 1px solid var(--accent-primary); text-align: center;">
+                              <i data-lucide="mic-off" style="width: 48px; height: 48px; color: var(--accent-primary); margin-bottom: 1rem;"></i>
+                              <h3 style="margin-bottom: 1.5rem; font-size: 2rem;">Detección de Dolor</h3>
+                              <p style="font-size: 1.4rem; color: var(--accent-secondary);">El interlocutor no puede interrumpir por 2 minutos mientras el "cliente" explica un problema ambiguo. Tu primera respuesta debe ser una pregunta de alto impacto.</p>
+                          </div>`
+            }
         ]
     },
     {
@@ -226,6 +383,40 @@ const sessions = [
         resources: [
             { type: "video", text: "Presenting in a Hybrid World (HBR)", url: "https://www.youtube.com/watch?v=1XkG7LqXyCQ", question: "Al presentar a un comité híbrido, ¿cómo asegurarás que los CFOs conectados remotamente no pierdan el hilo financiero?" },
             { type: "video", text: "How to know your audience - Communication Skills", url: "https://www.youtube.com/watch?v=ZJcqoA_sZFA", question: "¿Qué micro-preguntas harás en los primeros 3 minutos para perfilar si tu prospecto es Político, Técnico o Numérico?" }
+        ],
+        slides: [
+            {
+                title: "Lectura del Ecosistema Decisor",
+                content: `<p style="color: var(--text-muted); font-size: 1.5rem; text-align: center; margin-bottom: 2rem;">Camaleonismo Comercial</p>
+                          <div style="text-align: center;">
+                              <i data-lucide="eye" style="width: 120px; height: 120px; color: var(--accent-primary); margin-bottom: 2rem;"></i>
+                          </div>`
+            },
+            {
+                title: "Perfiles Decisores",
+                content: `<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                            <div style="background: rgba(59, 130, 246, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(59, 130, 246, 0.3);">
+                                <h3 style="color: #3b82f6; margin-bottom: 1rem;"><i data-lucide="terminal"></i> El Técnico (CTO)</h3>
+                                <ul style="list-style-type: none; padding: 0;">
+                                    <li style="margin-bottom: 0.8rem; font-size: 1.2rem;"><i data-lucide="check" style="width:16px; color:#3b82f6;"></i> Quiere oír sobre SLA, integraciones, y autonomía de soporte.</li>
+                                </ul>
+                            </div>
+                            <div style="background: rgba(16, 185, 129, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.3);">
+                                <h3 style="color: #10b981; margin-bottom: 1rem;"><i data-lucide="briefcase"></i> El Financiero (CFO)</h3>
+                                <ul style="list-style-type: none; padding: 0;">
+                                    <li style="margin-bottom: 0.8rem; font-size: 1.2rem;"><i data-lucide="check" style="width:16px; color:#10b981;"></i> Le interesa el ROI, flujo de caja, y TCO.</li>
+                                </ul>
+                            </div>
+                          </div>`
+            },
+            {
+                title: "Desafío en Vivo",
+                content: `<div style="background: rgba(0, 240, 255, 0.05); padding: 3rem; border-radius: 16px; border: 1px solid var(--accent-primary); text-align: center;">
+                              <i data-lucide="refresh-cw" style="width: 48px; height: 48px; color: var(--accent-primary); margin-bottom: 1rem;"></i>
+                              <h3 style="margin-bottom: 1.5rem; font-size: 2rem;">Cambio de Pitch (On-the-fly)</h3>
+                              <p style="font-size: 1.4rem; color: var(--accent-secondary);">Exponer un pitch y, a la mitad, el facilitador cambia tu interlocutor de Técnico a Político. Adapta el lenguaje inmediatamente.</p>
+                          </div>`
+            }
         ]
     },
     {
@@ -252,6 +443,33 @@ const sessions = [
         resources: [
             { type: "video", text: "Think Fast, Talk Smart - Matt Abrahams", url: "https://www.youtube.com/watch?v=HAnw168huqA", question: "¿Qué técnica de manejo de nerviosismo usarás cuando el cliente ataque tu solución integral y sientas presión extrema?" },
             { type: "video", text: "Handling Objections in Sales - Brian Tracy", url: "https://www.youtube.com/watch?v=N4T14I8B_4k", question: "Según Brian, el precio rara vez es la objeción real. ¿Cómo indagarás qué miedo profundo se esconde detrás del 'está muy caro'?" }
+        ],
+        slides: [
+            {
+                title: "Manejo Táctico de Objeciones",
+                content: `<p style="color: var(--text-muted); font-size: 1.5rem; text-align: center; margin-bottom: 2rem;">Validar Entendimiento antes de Defender</p>
+                          <div style="text-align: center;">
+                              <i data-lucide="shield" style="width: 120px; height: 120px; color: var(--accent-primary); margin-bottom: 2rem;"></i>
+                          </div>`
+            },
+            {
+                title: "La Metodología V-E-R",
+                content: `<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 3rem;">
+                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid var(--accent-secondary); color: var(--accent-secondary); font-weight: bold; font-size: 1.2rem;">VALIDAR</div></div>
+                            <i data-lucide="arrow-right" style="color: var(--text-muted); width: 32px; height: 32px;"></i>
+                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid #ef4444; color: #ef4444; font-weight: bold; font-size: 1.2rem;">EXPLORAR</div></div>
+                            <i data-lucide="arrow-right" style="color: var(--text-muted); width: 32px; height: 32px;"></i>
+                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid #10b981; color: #10b981; font-weight: bold; font-size: 1.1rem;">RESPONDER</div></div>
+                          </div>`
+            },
+            {
+                title: "Role-Play Grupal",
+                content: `<div style="background: rgba(0, 240, 255, 0.05); padding: 3rem; border-radius: 16px; border: 1px solid var(--accent-primary); text-align: center;">
+                              <i data-lucide="shield-alert" style="width: 48px; height: 48px; color: var(--accent-primary); margin-bottom: 1rem;"></i>
+                              <h3 style="margin-bottom: 1.5rem; font-size: 2rem;">Fuego Cruzado</h3>
+                              <p style="font-size: 1.4rem; color: var(--accent-secondary);">El cliente ataca con:"Estamos operando perfecto con su competidor". Apliquen el framework estructurado V-E-R.</p>
+                          </div>`
+            }
         ]
     },
     {
@@ -278,6 +496,36 @@ const sessions = [
         resources: [
             { type: "video", text: "The power of vulnerability - Brené Brown", url: "https://www.youtube.com/watch?v=iCvmsMzlF7o", question: "¿Cómo puedes admitir estratégicamente una limitación/debilidad de tu servicio para ganar credibilidad absoluta?" },
             { type: "video", text: "Imposter Syndrome in IT & Tech", url: "https://www.youtube.com/watch?v=ZkwqZfvbdFw", question: "¿Qué creencia limitante sueles sentir al venderle a un Director de multinacional, y cómo separarás esa ansiedad de tu valor real?" }
+        ],
+        slides: [
+            {
+                title: "Destrabar Objeciones Complejas",
+                content: `<p style="color: var(--text-muted); font-size: 1.5rem; text-align: center; margin-bottom: 2rem;">Sorteando Evasivas Corporativas</p>
+                          <div style="text-align: center;">
+                              <i data-lucide="unlock" style="width: 120px; height: 120px; color: var(--accent-primary); margin-bottom: 2rem;"></i>
+                          </div>`
+            },
+            {
+                title: "Bloqueadores Invisibles",
+                content: `<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                            <div style="background: rgba(239, 68, 68, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.3);">
+                                <h3 style="color: #ef4444; margin-bottom: 1rem;"><i data-lucide="alert-triangle"></i> Miedo al Costo Político</h3>
+                                <p style="font-size: 1.2rem; color: var(--text-muted);">"Nadie despide a un gerente por contratar a IBM". La inacción es la decisión más segura para un prospecto asustado.</p>
+                            </div>
+                            <div style="background: rgba(16, 185, 129, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.3);">
+                                <h3 style="color: #10b981; margin-bottom: 1rem;"><i data-lucide="crosshair"></i> Falsa Prioridad</h3>
+                                <p style="font-size: 1.2rem; color: var(--text-muted);">"Lo retomamos en Q4". Si el Dolor no está atado a un impacto inmediato, el proyecto queda congelado indefinidamente.</p>
+                            </div>
+                          </div>`
+            },
+            {
+                title: "Preguntas Desbloqueadoras",
+                content: `<div style="background: rgba(0, 240, 255, 0.05); padding: 3rem; border-radius: 16px; border: 1px solid var(--accent-primary); text-align: center;">
+                              <i data-lucide="key" style="width: 48px; height: 48px; color: var(--accent-primary); margin-bottom: 1rem;"></i>
+                              <h3 style="margin-bottom: 1.5rem; font-size: 2rem;">Silla Caliente</h3>
+                              <p style="font-size: 1.4rem; color: var(--accent-secondary);">El facilitador planteará una objeción de política interna. Tienes 60 segundos para responder con una Pregunta Desbloqueadora.</p>
+                          </div>`
+            }
         ]
     },
     {
@@ -303,6 +551,40 @@ const sessions = [
         resources: [
             { type: "video", text: "Best tech presentation patterns", url: "https://www.youtube.com/watch?v=Unzc731iCUY", question: "Identifica 1 patrón visual de esta charla que puedas incorporar para limpiar drásticamente tu propio PowerPoint." },
             { type: "video", text: "How to Pitch - Real World Examples", url: "https://www.youtube.com/watch?v=i6O98IG2anQ", question: "Analizando este pitch ganador, ¿qué elemento de 'tensión dramática' usarás para abrir o rematar tu próxima defensa técnica?" }
+        ],
+        slides: [
+            {
+                title: "Simulación de Alta Demanda",
+                content: `<p style="color: var(--text-muted); font-size: 1.5rem; text-align: center; margin-bottom: 2rem;">Práctica del Ciclo Completo</p>
+                          <div style="text-align: center;">
+                              <i data-lucide="swords" style="width: 120px; height: 120px; color: var(--accent-primary); margin-bottom: 2rem;"></i>
+                          </div>`
+            },
+            {
+                title: "Reglas de Involucramiento",
+                content: `<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                            <div style="background: rgba(0, 240, 255, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(0, 240, 255, 0.3); text-align: center;">
+                                <h3 style="color: var(--accent-primary);">10 Minutos</h3>
+                                <p style="font-size: 1.1rem; color: var(--text-muted);">Pitch de apertura y descubrimiento simulado.</p>
+                            </div>
+                            <div style="background: rgba(239, 68, 68, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.3); text-align: center;">
+                                <h3 style="color: #ef4444;">Hostilidad</h3>
+                                <p style="font-size: 1.1rem; color: var(--text-muted);">El "cliente" pondrá 2 objeciones duras.</p>
+                            </div>
+                            <div style="background: rgba(16, 185, 129, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.3); text-align: center;">
+                                <h3 style="color: #10b981;">Cierre</h3>
+                                <p style="font-size: 1.1rem; color: var(--text-muted);">Debes forzar al cliente a concretar los 'Next Steps'.</p>
+                            </div>
+                          </div>`
+            },
+            {
+                title: "Feedback 360",
+                content: `<div style="background: rgba(0, 240, 255, 0.05); padding: 3rem; border-radius: 16px; border: 1px solid var(--accent-primary); text-align: center;">
+                              <i data-lucide="activity" style="width: 48px; height: 48px; color: var(--accent-primary); margin-bottom: 1rem;"></i>
+                              <h3 style="margin-bottom: 1.5rem; font-size: 2rem;">Calibración de Equipo</h3>
+                              <p style="font-size: 1.4rem; color: var(--accent-secondary);">Crítica destructiva al comportamiento, constructiva a la persona. La honestidad radical eleva el estándar del equipo.</p>
+                          </div>`
+            }
         ]
     },
     {
@@ -329,6 +611,33 @@ const sessions = [
         resources: [
             { type: "video", text: "Habits of successful teams - Tedx", url: "https://www.youtube.com/watch?v=vVjE_K8xY0c", question: "¿Cuál de estos hábitos de equipo de alto rendimiento empezarás a liderar tú mismo en tu reunión de Pipeline semanal?" },
             { type: "video", text: "Discipline Equals Freedom - Jocko Willink", url: "https://www.youtube.com/watch?v=_tEawEGqP40", question: "Si la rutina da enfoque comercial: ¿Qué comportamiento estricto de agenda adoptarás al prospectar para evitar la procrastinación?" }
+        ],
+        slides: [
+            {
+                title: "Transferencia al Terreno",
+                content: `<p style="color: var(--text-muted); font-size: 1.5rem; text-align: center; margin-bottom: 2rem;">Disciplina Mantiene el Ritmo Operativo</p>
+                          <div style="text-align: center;">
+                              <i data-lucide="flag" style="width: 120px; height: 120px; color: var(--accent-primary); margin-bottom: 2rem;"></i>
+                          </div>`
+            },
+            {
+                title: "De la Teoría a la Calle",
+                content: `<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 3rem;">
+                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid var(--accent-secondary); color: var(--accent-secondary); font-weight: bold; font-size: 1.2rem;">INSPIRE</div></div>
+                            <i data-lucide="chevron-right" style="color: var(--text-muted); width: 32px; height: 32px;"></i>
+                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid #3b82f6; color: #3b82f6; font-weight: bold; font-size: 1.2rem;">ALIGN</div></div>
+                            <i data-lucide="chevron-right" style="color: var(--text-muted); width: 32px; height: 32px;"></i>
+                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid #10b981; color: #10b981; font-weight: bold; font-size: 1.1rem;">EXECUTE</div></div>
+                          </div>`
+            },
+            {
+                title: "Pacto Final",
+                content: `<div style="background: rgba(0, 240, 255, 0.05); padding: 3rem; border-radius: 16px; border: 1px solid var(--accent-primary); text-align: center;">
+                              <i data-lucide="users" style="width: 48px; height: 48px; color: var(--accent-primary); margin-bottom: 1rem;"></i>
+                              <h3 style="margin-bottom: 1.5rem; font-size: 2rem;">Compromiso Grupal</h3>
+                              <p style="font-size: 1.4rem; color: var(--accent-secondary);">Firma pública de los 3 acuerdos comerciales de equipo a mantener por el próximo trimestre fiscal.</p>
+                          </div>`
+            }
         ]
     }
 ];
@@ -428,15 +737,7 @@ function renderSessions() {
                     </div>
                 </div>
                 
-                <div class="ppt-list">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1rem;">
-                        <h4 style="margin: 0;"><i data-lucide="presentation" class="icon-lucide"></i> Contenido Presentación (PPT Expandida)</h4>
-                        ${session.slides ? `<button onclick="openPresentation(${session.num})" class="btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i data-lucide="play" style="width: 16px; height: 16px;"></i> Iniciar Clase</button>` : ''}
-                    </div>
-                    <div class="ppt-flow-container">
-                        ${slidesHTML}
-                    </div>
-                </div>
+                ${presentationBlockHTML}
 
                 <div class="resources-box">
                     <h4><i data-lucide="folder-open" class="icon-lucide"></i> Herramientas de Reflexión y Material</h4>
