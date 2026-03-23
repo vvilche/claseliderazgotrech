@@ -768,9 +768,6 @@ function renderSlide() {
         <div class="slide-body">
             ${slide.content}
         </div>
-        ${slide.notes ? `<div class="slide-notes">
-            <strong><i data-lucide="mic" style="width:16px; display:inline-block; margin-right:4px; vertical-align:middle;"></i> Guión de Instructor:</strong><br> ${slide.notes}
-        </div>` : ''}
     `;
     
     document.getElementById('slide-content').innerHTML = contentHtml;
