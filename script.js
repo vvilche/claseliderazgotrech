@@ -16,6 +16,10 @@ const sessions = [
             "5. Actividad de Cierre (10 min): Construcción y revisión del Elevator Pitch."
         ],
         deliverable: "Elevator Pitch (60 seg): Construir pitch con estructura Dolor → Solución → Impacto → Diferenciación con impacto medible.",
+        interactiveQuestion: {
+            question: "Haz el vínculo: Escribe tu 'Elevator Pitch' estructurando: Dolor de tu cliente > Tu Solución > Impacto medible.",
+            placeholder: "Ej: Mi cliente perdía visibilidad global. Instalamos el dashboard y en 2 semanas ahorraron 40 horas operativas."
+        },
         resources: [
             { type: "video", text: "Start with Why - Simon Sinek", url: "https://www.youtube.com/watch?v=u4ZoJKF_VuA" },
             { type: "video", text: "How to Sound Smart - Will Stephen", url: "https://www.youtube.com/watch?v=8S0FDjFBj8o" }
@@ -37,6 +41,10 @@ const sessions = [
             "5. Cierre (10 min): Tareas de cámara y feedback mutuo."
         ],
         deliverable: "Role-play rápido aplicando postura firme, voz pausada y uso de silencios para ordenar información.",
+        interactiveQuestion: {
+            question: "Autoevaluación: ¿En qué momentos de tu presentación comercial sueles perder seguridad visual/vocal y cómo puedes corregirlo?",
+            placeholder: "Ej: Cuando me preguntan por el precio suelo hablar rápido y mirar abajo. Desde hoy haré silencio de 2 segundos."
+        },
         resources: [
             { type: "video", text: "Your body language may shape who you are - Amy Cuddy", url: "https://www.youtube.com/watch?v=Ks-_Mh1QhMc" },
             { type: "video", text: "Body Language for Video Calls", url: "https://www.youtube.com/watch?v=cFTiGecOoqM" }
@@ -58,6 +66,10 @@ const sessions = [
             "5. Feedback (10 min): Revisión de 3 historias al azar."
         ],
         deliverable: "Redactar y presentar un caso de éxito real de la empresa siguiendo los 4 pasos de la estructura narrativa.",
+        interactiveQuestion: {
+            question: "Aterriza tu historia: Piensa en tu cliente más exitoso. Resume su caso en Contexto > Problema > Resultado.",
+            placeholder: "Ej: Contexto: Empresa ABC. Problema: Migración de datos lenta. Resultado: Proyecto entregado 1 mes antes sin downtime."
+        },
         resources: [
             { type: "video", text: "The magical science of storytelling - David JP Phillips", url: "https://www.youtube.com/watch?v=Nj-hdQMa3uA" },
             { type: "video", text: "How to speak so that people want to listen - Julian Treasure", url: "https://www.youtube.com/watch?v=eIho2S0ZahI" }
@@ -79,6 +91,10 @@ const sessions = [
             "5. Tareas (5 min): Compromiso de simplicidad."
         ],
         deliverable: "Técnica de traducción: Explicar su solución tecnológica más compleja en simples términos de impacto de negocio.",
+        interactiveQuestion: {
+            question: "Simplifica tu producto: Si tuvieras que explicarle la solución más compleja que vendes a un gerente comercial, ¿qué le dirías en 1 frase?",
+            placeholder: "Ej: En vez de vender 'VPN cifrada 256-bit', vendo 'Tus vendedores trabajarán desde casa sin riesgo a fugas de datos'."
+        },
         resources: [
             { type: "video", text: "Talk nerdy to me - Melissa Marshall", url: "https://www.youtube.com/watch?v=yIEQAoXFAUQ" },
             { type: "video", text: "The Feynman Technique 2.0", url: "https://www.youtube.com/watch?v=tkm0JZcj0kM" }
@@ -100,6 +116,10 @@ const sessions = [
             "5. Reflexión Final (5 min): El silencio como herramienta."
         ],
         deliverable: "Taller de sondeo: Transformar 5 afirmaciones consultivas en 5 preguntas estratégicas de indagación.",
+        interactiveQuestion: {
+            question: "Escucha el dolor real: Escribe 2 preguntas de indagación estratégica que harás en tu próxima reunión con un nuevo prospecto.",
+            placeholder: "Ej: 1. ¿Qué es lo que más te frustra de tu infraestructura actual? 2. ¿Qué pasará si no resuelves este desafío?"
+        },
         resources: [
              { type: "video", text: "The power of listening - William Ury", url: "https://www.youtube.com/watch?v=saXfavo1OQo" },
             { type: "video", text: "10 ways to have a better conversation - Celeste Headlee", url: "https://www.youtube.com/watch?v=R1vskiVDwl4" }
@@ -121,6 +141,10 @@ const sessions = [
             "5. Cierre (5 min): Anclajes de empatía."
         ],
         deliverable: "Matriz de Adaptación: Tomar el pitch de la Sesión 1 y presentarlo de 3 formas distintas según el tipo de cliente.",
+        interactiveQuestion: {
+            question: "Mapeo de tu ecosistema: ¿Qué perfiles decisores ves típicamente en tus reuniones y cómo adaptas tu lenguaje a cada uno?",
+            placeholder: "Ej: Principalmente enfrento al CTO y al CFO. Al CTO enfatizo SLA; al CFO hablo de ROI a 12 meses."
+        },
         resources: [
             { type: "video", text: "Presenting in a Hybrid World (HBR Channel)", url: "https://www.youtube.com/watch?v=1XkG7LqXyCQ" },
             { type: "video", text: "How to know your audience - Communication Skills", url: "https://www.youtube.com/watch?v=ZJcqoA_sZFA" }
@@ -142,6 +166,10 @@ const sessions = [
             "5. Recap (5 min): Transformando rechazo en oportunidad."
         ],
         deliverable: "Role-play en tríos: Aplicar la técnica Validar-Explorar-Responder ante la objeción de 'estamos operando bien con el actual'.",
+        interactiveQuestion: {
+            question: "Baja la guardia del cliente: ¿Cuál es la objeción más difícil que recibes hoy? Escribe cómo la Validarías.",
+            placeholder: "Ej: Objeción: 'No tenemos presupuesto este año'. Validación: 'Te entiendo perfectamente, cuidar el flujo de caja es vital...' "
+        },
         resources: [
             { type: "video", text: "Think Fast, Talk Smart - Matt Abrahams", url: "https://www.youtube.com/watch?v=HAnw168huqA" },
             { type: "video", text: "Handling Objections in Sales - Brian Tracy", url: "https://www.youtube.com/watch?v=N4T14I8B_4k" }
@@ -163,6 +191,10 @@ const sessions = [
             "5. Cierre (5 min): Autorescate en reuniones lentas."
         ],
         deliverable: "La Silla Caliente: Responder en menos de 60 segundos a evasivas de prioridad o política interna formuladas por el facilitador.",
+        interactiveQuestion: {
+            question: "Acelera el cierre: Recuerda tu último negocio estancado. ¿Qué pregunta 'desbloqueadora' le harás al sponsor interno mañana?",
+            placeholder: "Ej: ¿Qué tendría que suceder internamente para que la automatización de este proceso suba a prioridad 1?"
+        },
         resources: [
             { type: "video", text: "The power of vulnerability - Brené Brown", url: "https://www.youtube.com/watch?v=iCvmsMzlF7o" },
             { type: "video", text: "Imposter Syndrome in IT & Tech", url: "https://www.youtube.com/watch?v=ZkwqZfvbdFw" }
@@ -183,6 +215,10 @@ const sessions = [
             "4. Reflexión y Calibración (10 min): Feedback 360°, honesto y técnico."
         ],
         deliverable: "Pitch Final: Aportar un escenario real y ejecutar una simulación de venta de 10 minutos con retroalimentación 360° del grupo.",
+        interactiveQuestion: {
+            question: "El campo de batalla: Construye en tu mente un escenario extremadamente hostil. ¿Qué dirías en el primer minuto para ganar atención?",
+            placeholder: "Ej: 'Sé que su tiempo es muy limitado y hay resistencia a la nube pública. Permítame mostrarle en 3 minutos cómo lo mitigamos.'"
+        },
         resources: [
             { type: "video", text: "Best tech presentation patterns", url: "https://www.youtube.com/watch?v=Unzc731iCUY" },
             { type: "video", text: "How to Pitch - Real World Examples", url: "https://www.youtube.com/watch?v=i6O98IG2anQ" }
@@ -204,6 +240,10 @@ const sessions = [
             "5. Palabras finales del Facilitador (5 min)."
         ],
         deliverable: "Entregar Plan Personal firmando un compromiso de 3 acciones comunicacionales a cambiar en las próximas 2 semanas.",
+        interactiveQuestion: {
+            question: "Firma tu compromiso directo al negocio: ¿Cuáles son las 3 acciones comunicacionales que implementarás desde mañana?",
+            placeholder: "Ej: 1. Hacer silencios de 3 seg tras el precio. 2. Responder con Empatía primero. 3. Transformar mis features en dolores."
+        },
         resources: [
             { type: "video", text: "Habits of successful teams - Tedx", url: "https://www.youtube.com/watch?v=vVjE_K8xY0c" },
             { type: "video", text: "Discipline Equals Freedom - Jocko Willink", url: "https://www.youtube.com/watch?v=_tEawEGqP40" }
@@ -276,6 +316,19 @@ function renderSessions() {
                     <h4><i data-lucide="folder-open" class="icon-lucide"></i> Documentos y Material Verificado</h4>
                     ${resourcesHTML}
                 </div>
+
+                <div class="session-interactive-zone" style="margin-top: 2rem; background: rgba(0,255,163,0.03); border: 1px solid rgba(0,255,163,0.15); border-radius: 8px; padding: 1.5rem;">
+                    <div class="interactive-header" style="display: flex; align-items: center; gap: 10px; margin-bottom: 1rem;">
+                        <i data-lucide="edit-3" class="icon-lucide text-neon"></i>
+                        <h4 style="margin: 0; color: var(--text-light);">Vínculo con tu Realidad Comercial</h4>
+                    </div>
+                    <p class="question-label" style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 0.8rem;">${session.interactiveQuestion.question}</p>
+                    <textarea class="reflection-input" id="reflection-${session.num}" placeholder="${session.interactiveQuestion.placeholder}" rows="3" style="width: 100%; background: var(--bg-dark); color: var(--text-light); border: 1px solid var(--border-glass); border-radius: 6px; padding: 1rem; font-family: 'Inter', sans-serif; resize: vertical; margin-bottom: 1rem;"></textarea>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <button class="btn-outline btn-save-reflection" onclick="saveReflection(${session.num}, this)" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">Guardar Reflexión</button>
+                        <span class="save-status" id="save-status-${session.num}" style="font-size: 0.85rem; font-weight: 500;"></span>
+                    </div>
+                </div>
             </div>
         `;
         
@@ -335,6 +388,42 @@ function toggleDashboard() {
         dash.style.display = 'none';
     }
 }
+
+// Funciones para Reflexiones Interactivas de Sesión
+function loadReflections() {
+    sessions.forEach(session => {
+        let savedText = localStorage.getItem(`reflection_${session.num}`);
+        if(savedText) {
+            let textarea = document.getElementById(`reflection-${session.num}`);
+            if(textarea) {
+                textarea.value = savedText;
+            }
+        }
+    });
+}
+
+window.saveReflection = function(sessionNum, btnElement) {
+    const textarea = document.getElementById(`reflection-${sessionNum}`);
+    const statusSpan = document.getElementById(`save-status-${sessionNum}`);
+    
+    if(textarea && textarea.value.trim() !== "") {
+        localStorage.setItem(`reflection_${sessionNum}`, textarea.value);
+        statusSpan.innerText = "¡Reflexión Guardada!";
+        statusSpan.style.color = "var(--success-color, #4ade80)";
+        
+        // Efecto visual en el botón
+        let originalText = btnElement.innerText;
+        btnElement.innerText = "Actualizado";
+        btnElement.style.borderColor = "var(--success-color, #4ade80)";
+        setTimeout(() => {
+            statusSpan.innerText = "";
+            btnElement.innerText = originalText;
+            btnElement.style.borderColor = "var(--accent-primary)";
+        }, 3000);
+    } else {
+        alert("Escribe una reflexión antes de guardar.");
+    }
+};
 
 function clearData() {
     if(confirm('¿Estás seguro de borrar todos los datos del equipo?')) {
@@ -503,14 +592,11 @@ function handleNavbar() {
 
 // Initialization
 document.addEventListener('DOMContentLoaded', () => {
-    initDiagnosticoForm();
-    renderSessions();
-    // Re-initialize Lucide icons for the newly injected elements
     lucide.createIcons();
-
-    // Initial check for reveals
+    renderSessions();
+    loadReflections(); // Cargar datos guardados
     revealOnScroll();
-    handleNavbar();
+    initDiagnosticoForm();
 });
 
 window.addEventListener("scroll", () => {
