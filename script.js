@@ -101,27 +101,28 @@ const sessions = [
     {
         num: 2,
         date: "Miércoles 25 de Marzo",
-        modality: "Presencial",
-        title: "Presencia y Lenguaje Ejecutivo",
-        desc: "Dominio de la postura (espalda recta), voz (ritmo medio) y el silencio estratégico para proyectar seguridad.",
-        objective: "Aprender a utilizar la postura, la voz y el silencio para proyectar autoridad y seguridad frente al cliente.",
-        ejemplo: 'Cliente: "No tengo mucho tiempo." Respuesta (con pausa y contacto visual): "Perfecto. Voy directo a lo relevante."',
-        leadershipCapsule: "El cuerpo comunica antes que la voz. El líder ejecutivo domina su espacio, sea físico o virtual, unificando al equipo.",
+        modality: "Híbrido",
+        title: "Presencia, Postura y Lenguaje Ejecutivo",
+        desc: "Dominio de la postura expansiva, comunicación no verbal (regla 55-38-7) y el silencio estratégico en entornos híbridos.",
+        objective: "Aprender a utilizar la postura, la voz y el silencio para proyectar autoridad frente al cliente, tanto en sala como en cámara.",
+        ejemplo: 'Cliente: "No tengo tiempo." Respuesta (con pausa, postura anclada y mirada al lente): "Perfecto, vamos al grano."',
+        leadershipCapsule: "El cuerpo comunica antes que la voz. El líder ejecutivo domina su espacio físico y digital con plena consciencia.",
         pptOutline: [
-            "1. Check-in (10 min): ¿Cómo proyectamos seguridad en virtualidad?",
-            "2. Teoría (15 min): Postura, modulación y el silencio como ancla de autoridad.",
-            "3. Conversación (15 min): Errores comunes del equipo en videollamadas con clientes.",
-            "4. Práctica (10 min): Dinámica grupal leyendo un párrafo monótono vs persuasivo.",
-            "5. Cierre (10 min): Tareas de cámara y feedback mutuo."
+            "1. Check-in (10 min): ¿Cómo proyectamos autoridad en formatos híbridos?",
+            "2. Teoría (15 min): Postura, la 'Caja' de gestos, y la Regla 55-38-7 de Mehrabian.",
+            "3. Errores (10 min): Las Red Flags (balanceo, brazos cruzados, ignorar la cámara).",
+            "4. Dinámica 1 (15 min): El Espejo de la Postura (contraste físico/remoto).",
+            "5. Dinámica 2 (20 min): Cazadores del Canal No Verbal (División Perceptiva).",
+            "6. Cierre (10 min): El Triángulo de Miradas Híbrido."
         ],
-        deliverable: "Role-play rápido aplicando postura firme, voz pausada y uso de silencios para ordenar información.",
+        deliverable: "Role-play integrando los 3 canales de comunicación, con foco en el anclaje físico y la pausa respiratoria.",
         interactiveQuestion: {
-            question: "Autoevaluación: ¿En qué momentos de tu presentación comercial sueles perder seguridad visual/vocal y cómo puedes corregirlo?",
-            placeholder: "Ej: Cuando me preguntan por el precio suelo hablar rápido y mirar abajo. Desde hoy haré silencio de 2 segundos."
+            question: "Autoevaluación de Red Flags: ¿Qué muletilla corporal sueles hacer por nerviosismo y cómo la controlarás?",
+            placeholder: "Ej: Suelo balancearme. Ahora separaré los pies a la altura de los hombros antes de empezar."
         },
         resources: [
-            { type: "video", text: "Your body language may shape who you are - Amy Cuddy", url: "https://www.youtube.com/watch?v=Ks-_Mh1QhMc", question: "¿En qué momento de alto estrés presencial podrías aplicar una 'Power Pose' de 2 minutos antes de la reunión comercial?" },
-            { type: "video", text: "Body Language for Video Calls", url: "https://www.youtube.com/watch?v=cFTiGecOoqM", question: "En tu próxima llamada por Teams, ¿qué ajuste harás en la cámara o postura para proyectar 100% de atención?" }
+            { type: "video", text: "Your body language may shape who you are - Amy Cuddy", url: "https://www.youtube.com/watch?v=Ks-_Mh1QhMc", question: "¿Antes de qué reunión crucial aplicarías posturas de poder (power poses) para ajustar tu nivel de cortisol y testosterona?" },
+            { type: "file-text", text: "Guía de Estudio: Postura y Expresión", url: "Guia_Presentaciones_Postura_Y_Expresion.md", question: "¿Qué técnica de la guía aplicarás primero: El Triángulo de Miradas, Las Manos en la Caja, o el Enraizamiento?" }
         ],
         slides: [
             {
@@ -132,38 +133,50 @@ const sessions = [
                           </div>`
             },
             {
-                title: "¿Cómo Proyectamos Seguridad?",
-                content: `<p style="font-size: 1.4rem; color: var(--accent-secondary); margin-bottom: 1.5rem; text-align: center;">El 55% de la comunicación es lenguaje corporal.</p>
-                          <div style="background: rgba(0,0,0,0.3); padding: 2rem; border-radius: 12px; text-align: center; border: 1px dashed var(--border-glass);">
-                              <i data-lucide="video" style="width: 64px; height: 64px; color: var(--text-muted); margin-bottom: 1rem;"></i>
-                              <p style="font-size: 1.2rem;">Actividad: Evalúa tu propia postura en cámara. ¿Miras al lente o a la pantalla?</p>
-                          </div>`
-            },
-            {
-                title: "El Poder del Silencio",
-                content: `<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
-                            <div style="background: rgba(239, 68, 68, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.3);">
-                                <h3 style="color: #ef4444; margin-bottom: 1rem;"><i data-lucide="x-circle"></i> Error: Llenar el Vacío</h3>
-                                <ul style="list-style-type: none; padding: 0;">
-                                    <li style="margin-bottom: 0.8rem; font-size: 1.2rem;"><i data-lucide="minus" style="width:16px; color:#ef4444;"></i> Uso de muletillas ("ehhh", "mmm")</li>
-                                    <li style="margin-bottom: 0.8rem; font-size: 1.2rem;"><i data-lucide="minus" style="width:16px; color:#ef4444;"></i> Hablar rápido por nerviosismo</li>
-                                </ul>
+                title: "La Regla 55-38-7",
+                content: `<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                            <div style="background: rgba(16, 185, 129, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.3); text-align: center;">
+                                <h3 style="color: #10b981; font-size: 2rem; margin-bottom: 0.5rem;">55%</h3>
+                                <p style="font-size: 1.2rem; color: #fff; font-weight: bold;">Cuerpo</p>
+                                <p style="font-size: 1rem; color: var(--text-muted); margin-top: 1rem;">Postura, Gestos, Mirada</p>
                             </div>
-                            <div style="background: rgba(16, 185, 129, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.3);">
-                                <h3 style="color: #10b981; margin-bottom: 1rem;"><i data-lucide="check-circle"></i> Acierto: Pausa Estratégica</h3>
-                                <ul style="list-style-type: none; padding: 0;">
-                                    <li style="margin-bottom: 0.8rem; font-size: 1.2rem;"><i data-lucide="check" style="width:16px; color:#10b981;"></i> Da peso a tu afirmación</li>
-                                    <li style="margin-bottom: 0.8rem; font-size: 1.2rem;"><i data-lucide="check" style="width:16px; color:#10b981;"></i> Proyecta control y autoridad</li>
-                                </ul>
+                            <div style="background: rgba(59, 130, 246, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(59, 130, 246, 0.3); text-align: center;">
+                                <h3 style="color: #3b82f6; font-size: 2rem; margin-bottom: 0.5rem;">38%</h3>
+                                <p style="font-size: 1.2rem; color: #fff; font-weight: bold;">Voz</p>
+                                <p style="font-size: 1rem; color: var(--text-muted); margin-top: 1rem;">Tono, Ritmo, Volumen</p>
+                            </div>
+                            <div style="background: rgba(239, 68, 68, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.3); text-align: center;">
+                                <h3 style="color: #ef4444; font-size: 2rem; margin-bottom: 0.5rem;">7%</h3>
+                                <p style="font-size: 1.2rem; color: #fff; font-weight: bold;">Palabras</p>
+                                <p style="font-size: 1rem; color: var(--text-muted); margin-top: 1rem;">Argumento Racional</p>
                             </div>
                           </div>`
             },
             {
-                title: "Práctica de Oratoria",
+                title: "Dinámica: Cazadores del Canal No Verbal",
+                content: `<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; margin-top: 2rem;">
+                            <div style="background: rgba(239, 68, 68, 0.1); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.3);">
+                                <h3 style="color: #ef4444; margin-bottom: 1rem; text-align: center;"><i data-lucide="eye-off"></i> Grupo 1</h3>
+                                <p style="font-size: 1rem; color: var(--text-muted); text-align: center;">Presenciales. <strong>Oídos Tapados.</strong> Analizarán únicamente los gestos y postura.</p>
+                            </div>
+                            <div style="background: rgba(16, 185, 129, 0.1); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.3);">
+                                <h3 style="color: #10b981; margin-bottom: 1rem; text-align: center;"><i data-lucide="volume-x"></i> Grupo 2</h3>
+                                <p style="font-size: 1rem; color: var(--text-muted); text-align: center;">Presenciales. <strong>Ojos Cerrados.</strong> Analizarán únicamente el tono, silencios y velocidad.</p>
+                            </div>
+                            <div style="background: rgba(59, 130, 246, 0.1); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(59, 130, 246, 0.3);">
+                                <h3 style="color: #3b82f6; margin-bottom: 1rem; text-align: center;"><i data-lucide="monitor"></i> Grupo 3</h3>
+                                <p style="font-size: 1rem; color: var(--text-muted); text-align: center;">Remotos. <strong>Auditores del 7%.</strong> Evaluarán el impacto exclusivo de las palabras literales.</p>
+                            </div>
+                          </div>
+                          <p style="text-align: center; margin-top: 2rem; font-size: 1.2rem; color: var(--accent-secondary);">Vote the Video: Al Pacino | Steve Jobs | Brené Brown</p>`
+            },
+            {
+                title: "El Triángulo Híbrido",
                 content: `<div style="background: rgba(0, 240, 255, 0.05); padding: 3rem; border-radius: 16px; border: 1px solid var(--accent-primary); text-align: center;">
-                              <i data-lucide="mic" style="width: 48px; height: 48px; color: var(--accent-primary); margin-bottom: 1rem;"></i>
-                              <h3 style="margin-bottom: 1.5rem; font-size: 2rem;">Taller de Voz</h3>
-                              <p style="font-size: 1.4rem; color: var(--accent-secondary);">Lee el texto asignado aplicando pausas de 2 segundos después de cada punto.</p>
+                              <i data-lucide="camera" style="width: 48px; height: 48px; color: var(--accent-primary); margin-bottom: 1rem;"></i>
+                              <h3 style="margin-bottom: 1.5rem; font-size: 2rem;">Mirar al Lente</h3>
+                              <p style="font-size: 1.4rem; color: var(--text-light);">El mayor error del presentador híbrido es olvidar a la audiencia virtual.</p>
+                              <p style="font-size: 1.4rem; color: var(--accent-secondary); margin-top: 1rem;">Mirar tu cámara web es el equivalente digital a hacer contacto visual directo con decenas de personas simultáneamente.</p>
                           </div>`
             }
         ]
