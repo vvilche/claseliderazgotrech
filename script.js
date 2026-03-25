@@ -133,6 +133,26 @@ const sessions = [
                           </div>`
             },
             {
+                title: "Posturas de Poder (TED: Amy Cuddy)",
+                content: `<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                            <div style="background: rgba(16, 185, 129, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.3);">
+                                <h3 style="color: #10b981; margin-bottom: 1rem;"><i data-lucide="arrow-up-circle"></i> Postura Expansiva (2 min)</h3>
+                                <ul style="list-style-type: none; padding: 0;">
+                                    <li style="margin-bottom: 0.8rem; font-size: 1.2rem; color: #fff;"><i data-lucide="check" style="width:16px; color:#10b981;"></i> +20% Testosterona (Presencia/Seguridad)</li>
+                                    <li style="margin-bottom: 0.8rem; font-size: 1.2rem; color: #fff;"><i data-lucide="minus" style="width:16px; color:#10b981;"></i> -25% Cortisol (Reducción de Estrés)</li>
+                                </ul>
+                            </div>
+                            <div style="background: rgba(239, 68, 68, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.3);">
+                                <h3 style="color: #ef4444; margin-bottom: 1rem;"><i data-lucide="arrow-down-circle"></i> Postura Cerrada / Baja Energía</h3>
+                                <ul style="list-style-type: none; padding: 0;">
+                                    <li style="margin-bottom: 0.8rem; font-size: 1.2rem; color: #fff;"><i data-lucide="minus" style="width:16px; color:#ef4444;"></i> Disminuye drásticamente la autoconfianza</li>
+                                    <li style="margin-bottom: 0.8rem; font-size: 1.2rem; color: #fff;"><i data-lucide="check" style="width:16px; color:#ef4444;"></i> Aumenta los bloqueos mentales por estrés</li>
+                                </ul>
+                            </div>
+                          </div>
+                          <p style="text-align: center; margin-top: 2rem; font-size: 1.5rem; font-style: italic; color: var(--accent-secondary);">"Fake it till you BECOME it"</p>`
+            },
+            {
                 title: "La Regla 55-38-7",
                 content: `<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; margin-top: 2rem;">
                             <div style="background: rgba(16, 185, 129, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.3); text-align: center;">
