@@ -212,55 +212,113 @@ const sessions = [
         leadershipCapsule: "Los datos convencen, pero las historias mueven a la acción. El líder inspira narrando la visión compartida de la empresa.",
         pptOutline: [
             "1. Apertura (10 min): Intercambio de las peores anécdotas con clientes.",
-            "2. Teoría Narrativa (15 min): Contexto > Problema > Intervención > Resultado.",
-            "3. Conversación (15 min): Adaptando nuestros casos de éxito a este framework mental.",
-            "4. Taller Express (10 min): Armar un caso de 2 minutos sobre un cliente actual.",
-            "5. Feedback (10 min): Revisión de 3 historias al azar."
+            "2. Teoría Narrativa (15 min): La Neurociencia detrás del Storytelling.",
+            "3. El Método CPIR (15 min): Contexto > Problema > Intervención > Resultado.",
+            "4. Casos de Éxito (15 min): De la descripción técnica a la narrativa de negocio.",
+            "5. Taller Express (15 min): Construcción de tu caso real CPIR.",
+            "6. Feedback y Cierre (10 min): Revisión de 3 historias al azar."
         ],
-        deliverable: "Redactar y presentar un caso de éxito real de la empresa siguiendo los 4 pasos de la estructura narrativa.",
+        deliverable: "Redactar y presentar un caso de éxito real de la empresa siguiendo los 4 pasos de la estructura narrativa CPIR.",
         interactiveQuestion: {
-            question: "Aterriza tu historia: Piensa en tu cliente más exitoso. Resume su caso en Contexto > Problema > Resultado.",
-            placeholder: "Ej: Contexto: Empresa ABC. Problema: Migración de datos lenta. Resultado: Proyecto entregado 1 mes antes sin downtime."
+            question: "Aterriza tu historia: Piensa en tu cliente más exitoso. Resume su caso siguiendo el modelo CPIR.",
+            placeholder: "Ej: Contexto: Empresa ABC. Problema: Migración lenta. Intervención: Nuestra API de sincronización. Resultado: 1 mes antes sin downtime."
         },
         resources: [
+            { type: "file-text", text: "Guía de Estudio: Storytelling y Método CPIR", url: "Guia_Storytelling_Comercial_CPIR.md", question: "¿Cuál de los 4 pasos del CPIR crees que es el más difícil de comunicar y por qué?" },
             { type: "video", text: "The magical science of storytelling - David JP Phillips", url: "https://www.youtube.com/watch?v=Nj-hdQMa3uA", question: "¿Qué neurotransmisor (Dopamina, Oxitocina, Endorfina) crees que tu actual presentación evoca en los clientes?" },
             { type: "video", text: "How to speak so that people want to listen - Julian Treasure", url: "https://www.youtube.com/watch?v=eIho2S0ZahI", question: "De los pecados al hablar, ¿crees que tú o tu equipo tienden a 'pontificar' sobre tecnología? ¿Cómo serás más breve?" }
         ],
         slides: [
             {
                 title: "Storytelling Comercial",
-                content: `<p style="color: var(--text-muted); font-size: 1.5rem; text-align: center; margin-bottom: 2rem;">Estructurar Casos de Éxito</p>
+                content: `<p style="color: var(--text-muted); font-size: 1.5rem; text-align: center; margin-bottom: 2rem;">El Arte de Estructurar el Éxito</p>
                           <div style="text-align: center;">
                               <i data-lucide="book-open" style="width: 120px; height: 120px; color: var(--accent-primary); margin-bottom: 2rem;"></i>
-                          </div>`
+                          </div>`,
+                notes: "Bienvenida. Hoy aprenderemos a dejar de ser 'vendedores de cajas' para ser 'contadores de visiones'."
             },
             {
-                title: "¿Por qué contamos historias?",
-                content: `<p style="font-size: 1.4rem; color: var(--accent-secondary); margin-bottom: 1.5rem; text-align: center;">Los datos informan, pero las historias venden.</p>
-                          <div style="background: rgba(0,0,0,0.3); padding: 2rem; border-radius: 12px; text-align: center; border: 1px dashed var(--border-glass);">
-                              <i data-lucide="brain" style="width: 64px; height: 64px; color: var(--text-muted); margin-bottom: 1rem;"></i>
-                              <p style="font-size: 1.2rem;">El cerebro recuerda historias un 22x más que simples hechos técnicos.</p>
-                          </div>`
+                title: "La Neurociencia del Impacto",
+                content: `<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; margin-top: 2rem;">
+                            <div style="background: rgba(0, 240, 255, 0.1); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--accent-primary); text-align: center;">
+                                <h3 style="color: var(--accent-primary); margin-bottom: 0.5rem;">Dopamina</h3>
+                                <p style="font-size: 0.9rem; color: #fff;">Atención y Suspenso</p>
+                            </div>
+                            <div style="background: rgba(112, 0, 255, 0.1); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--accent-secondary); text-align: center;">
+                                <h3 style="color: var(--accent-secondary); margin-bottom: 0.5rem;">Oxitocina</h3>
+                                <p style="font-size: 0.9rem; color: #fff;">Empatía y Confianza</p>
+                            </div>
+                            <div style="background: rgba(255, 0, 85, 0.1); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--accent-tertiary); text-align: center;">
+                                <h3 style="color: var(--accent-tertiary); margin-bottom: 0.5rem;">Endorfina</h3>
+                                <p style="font-size: 0.9rem; color: #fff;">Memoria y Cierre</p>
+                            </div>
+                          </div>
+                          <p style="text-align: center; margin-top: 2rem; font-size: 1.2rem; color: var(--text-muted);">El cerebro recuerda historias un <strong>22x más</strong> que simples hechos.</p>`,
+                notes: "Explicar que no es magia, es química cerebral. Una historia bien contada hackea la resistencia natural del cliente."
             },
             {
-                title: "Método CPIR",
+                title: "Método CPIR: El Mapa",
                 content: `<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 3rem;">
-                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid #ef4444; color: #ef4444; font-weight: bold; font-size: 1.2rem;">CONTEXTO</div></div>
-                            <i data-lucide="arrow-right" style="color: var(--text-muted); width: 32px; height: 32px;"></i>
-                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid var(--accent-secondary); color: var(--accent-secondary); font-weight: bold; font-size: 1.2rem;">PROBLEMA</div></div>
-                            <i data-lucide="arrow-right" style="color: var(--text-muted); width: 32px; height: 32px;"></i>
-                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid #10b981; color: #10b981; font-weight: bold; font-size: 1.1rem;">INTERVENCIÓN</div></div>
-                            <i data-lucide="arrow-right" style="color: var(--text-muted); width: 32px; height: 32px;"></i>
-                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid var(--accent-primary); color: var(--accent-primary); font-weight: bold; font-size: 1.2rem;">RESULTADO</div></div>
-                          </div>`
+                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 100px; height: 100px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid #ef4444; color: #ef4444; font-weight: bold; font-size: 1rem;">C</div><p style="font-size: 0.8rem; margin-top: 0.5rem;">Contexto</p></div>
+                            <i data-lucide="chevron-right" style="color: var(--text-muted); width: 24px;"></i>
+                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 100px; height: 100px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid var(--accent-secondary); color: var(--accent-secondary); font-weight: bold; font-size: 1rem;">P</div><p style="font-size: 0.8rem; margin-top: 0.5rem;">Problema</p></div>
+                            <i data-lucide="chevron-right" style="color: var(--text-muted); width: 24px;"></i>
+                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 100px; height: 100px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid #10b981; color: #10b981; font-weight: bold; font-size: 1rem;">I</div><p style="font-size: 0.8rem; margin-top: 0.5rem;">Intervención</p></div>
+                            <i data-lucide="chevron-right" style="color: var(--text-muted); width: 24px;"></i>
+                            <div style="text-align: center; flex: 1;"><div style="background: var(--bg-dark); padding: 1.5rem; border-radius: 50%; width: 100px; height: 100px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid var(--accent-primary); color: var(--accent-primary); font-weight: bold; font-size: 1rem;">R</div><p style="font-size: 0.8rem; margin-top: 0.5rem;">Resultado</p></div>
+                          </div>`,
+                notes: "Contexto (Punto A), Problema (El dolor), Intervención (Nuestra acción), Resultado (Punto B). Sin cambio, no hay historia."
             },
             {
-                title: "Taller: Tu Caso de Éxito",
+                title: "Técnico vs. Comercial",
+                content: `<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1rem;">
+                            <div style="background: rgba(239, 68, 68, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.2);">
+                                <h4 style="color: #ef4444; margin-bottom: 1rem;">❌ Argumento Técnico</h4>
+                                <ul style="list-style-type: none; padding: 0; font-size: 0.9rem; color: var(--text-muted);">
+                                    <li>"Tenemos una API RESTful..."</li>
+                                    <li>"El uptime es del 99.9%."</li>
+                                    <li>"Es una solución escalable."</li>
+                                </ul>
+                            </div>
+                            <div style="background: rgba(16, 185, 129, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.2);">
+                                <h4 style="color: #10b981; margin-bottom: 1rem;">✅ Storytelling Comercial</h4>
+                                <ul style="list-style-type: none; padding: 0; font-size: 0.9rem; color: #fff;">
+                                    <li>"Unificamos 5 bodegas en 4 semanas."</li>
+                                    <li>"No perdieron ni 1 transación en Navidad."</li>
+                                    <li>"Crecieron x100 en un fin de semana."</li>
+                                </ul>
+                            </div>
+                          </div>`,
+                notes: "El cliente compra el 'Resultado', no la 'Intervención' técnica. La tecnología es el transporte, no el destino."
+            },
+            {
+                title: "Checklist del Gran Relator",
+                content: `<ul style="list-style-type: none; padding: 2rem; background: rgba(0,0,0,0.2); border-radius: 16px;">
+                            <li style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;"><i data-lucide="check-circle" style="color: var(--accent-primary);"></i> <span>¿El cliente es el héroe (tú solo el guía)?</span></li>
+                            <li style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;"><i data-lucide="check-circle" style="color: var(--accent-primary);"></i> <span>¿El dolor es medible y emocional?</span></li>
+                            <li style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;"><i data-lucide="check-circle" style="color: var(--accent-primary);"></i> <span>¿Eliminaste la jerga innecesaria?</span></li>
+                            <li style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;"><i data-lucide="check-circle" style="color: var(--accent-primary);"></i> <span>¿El resultado incluye números de negocio?</span></li>
+                          </ul>`,
+                notes: "Si no cumples estos 4 puntos, es un resumen ejecutivo, no una historia."
+            },
+            {
+                title: "Taller: Tu Caso CPIR",
                 content: `<div style="background: rgba(0, 240, 255, 0.05); padding: 3rem; border-radius: 16px; border: 1px solid var(--accent-primary); text-align: center;">
-                              <i data-lucide="award" style="width: 48px; height: 48px; color: var(--accent-primary); margin-bottom: 1rem;"></i>
-                              <h3 style="margin-bottom: 1.5rem; font-size: 2rem;">Redacción Narrativa</h3>
-                              <p style="font-size: 1.4rem; color: var(--accent-secondary);">Elige el mejor proyecto que hayas implementado y cuéntalo usando CPIR.</p>
-                          </div>`
+                               <i data-lucide="pen-tool" style="width: 48px; height: 48px; color: var(--accent-primary); margin-bottom: 1rem;"></i>
+                               <h3 style="margin-bottom: 1.5rem; font-size: 2rem;">Redacción Narrativa</h3>
+                               <p style="font-size: 1.4rem; color: var(--accent-secondary);">Elige tu mejor proyecto y cuéntalo en 4 frases siguiendo el CPIR.</p>
+                               <p style="font-size: 1.1rem; color: var(--text-muted); margin-top: 1rem;">Tienes 10 minutos antes del Pitch en vivo.</p>
+                           </div>`,
+                notes: "Enfatizar que deben ser 4 frases literales. La brevedad es el alma del ingenio comercial."
+            },
+            {
+                title: "Feedback del Equipo",
+                content: `<div style="text-align: center; padding: 3rem;">
+                               <i data-lucide="activity" style="width: 80px; height: 80px; color: var(--accent-tertiary); margin-bottom: 2rem;"></i>
+                               <h2 style="font-size: 2.5rem; color: #fff; margin-bottom: 1rem;">Calibración de Historias</h2>
+                               <p style="font-size: 1.4rem; color: var(--text-muted);">¿La historia movió tu aguja emocional? ¿Comprarías la solución basado solo en este relato?</p>
+                           </div>`,
+                notes: "Finalizar con la reflexión: Los datos informan, pero las historias venden. Tu capacidad de liderar depende de tu capacidad de narrar."
             }
         ]
     },
